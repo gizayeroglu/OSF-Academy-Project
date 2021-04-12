@@ -1,3 +1,349 @@
-body {
-  background-color: purple;
+/* carousel*/
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 5px;
+  padding: 3px;
+  color: gray;
 }
+
+.slider {
+  margin: 0 !important;
+}
+.slider img {
+  border-radius: 15px;
+  height: 560px;
+  width: auto;
+}
+.carouselbutton {
+  background: transparent;
+  width: 150px;
+  border-radius: 20px;
+  color: white;
+  height: 40px;
+  border: 3px solid white;
+  margin-top: 3%;
+  outline: none;
+}
+
+.carousel-caption {
+  font-family: "Lato", sans-serif;
+}
+.carousel-caption h5 {
+  font-size: 35px;
+  font-weight: bolder;
+}
+.carousel-caption {
+  top: 15%;
+  bottom: auto;
+}
+
+/* carousel*/
+
+/* summer sales section*/
+
+.summersales img {
+  height: 365px;
+  width: 300px;
+  border-radius: 10px;
+}
+.followbutton {
+  border: 3px solid #3b5b96;
+  height: 50px;
+  width: 180px;
+  border-radius: 30px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.summersales h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 17pt;
+  margin-left: 31px;
+  justify-items: center;
+  margin-top: 40px;
+}
+.summersales p {
+  font-family: "Lato", sans-serif;
+  font-size: 12pt;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.followbutton .facebook-btn {
+  border: 0;
+  height: 40px;
+  width: 75%;
+  background-color: transparent;
+  color: #3b5b96;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+.followbutton .fab {
+  font-size: 25px;
+  color: #3b5b96;
+  margin-left: 18px;
+}
+
+/* summer sales section*/
+
+@media only screen and (min-width: 1280px) {
+  /*large*/
+}
+
+/***************************************************************************************************************************************
+*******************************************************************************************************************************
+******************************* BIG SCREEN*********************************************************************************
+******************************************************************************************************************************/
+
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (max-width: 767px) {
+}
+
+/* full width banner osf theme*/
+.fullwidthImage img {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+/* full width banner osf theme*/
+
+/* <!--Benefits Content--->  */
+.benefit {
+  background-color: #45413e;
+}
+.benefit h5 {
+  color: white;
+}
+
+.benefit p {
+  color: #999999;
+}
+.benefits {
+  margin-top: 60px;
+}
+
+/*  <!--Benefits Content--->  */
+
+/* popular items */
+
+.popitem {
+  background-color: white;
+  border-radius: 5px;
+  height: 350px;
+  width: 255px;
+}
+.popitem img {
+  width: 255px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.popitem {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.popitem p {
+  margin-top: 10px;
+}
+.containerpop .hr-text {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+.popularitems {
+  background-color: #262a33;
+}
+.loadmore {
+  margin-top: 50px;
+  width: 300px;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin: auto;
+  margin-top: 50px;
+}
+.loadmore .fas {
+  color: white;
+}
+.loadmore-btn {
+  background: transparent;
+  border: none;
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+  outline: none;
+  height: 40px;
+}
+
+/* popular items */
+
+/*featured products */
+.featuredproduct img {
+  width: 250px;
+  height: 180px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.featuredproduct {
+  background-color: white;
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+.featuredproduct p {
+  padding: 3px;
+  color: black;
+  font-family: "Lato", sans-serif;
+  margin-top: 10px;
+}
+.featuredproduct h {
+  color: #85bc23;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+
+.containerpop {
+  text-align: center;
+  color: white;
+}
+.containerpop h5 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.featured {
+  background-color: #262a33;
+}
+.carousel-control-prev {
+  top: -270px;
+  position: absolute;
+}
+.carousel-control-next {
+  top: -270px;
+  position: absolute;
+}
+/*featured products */
+
+@media only screen and (max-width: 1200px) {
+  /*login popup*/
+  /*popular items*/
+  /*featured product*/
+  .featured {
+    display: none;
+  }
+
+  .popularitems {
+    display: none;
+  }
+  .summersales {
+    display: none;
+  }
+  .DescriptionProduct {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .servicesLandingImgBox {
+    margin: auto;
+    margin-top: 15px;
+  }
+  .popitemProduct {
+    display: none;
+  }
+}
+
+/* small screen popular item slide */
+.sliderPop {
+  padding-top: 25px;
+  background-color: #262a33;
+}
+.ProductScreen {
+  height: 700px !important;
+  background-color: #f1edea !important;
+}
+.ProductScreen hr {
+  color: #1c2735 !important;
+}
+.ProductScreen .scrolltop {
+  width: 150px;
+  border-radius: 20px;
+  height: 40px;
+  color: white;
+  border: 1px solid #85bc23;
+  background-color: #85bc23;
+  margin-top: 15px;
+  outline: none;
+}
+.scrollingButtonDiv {
+  text-align: center;
+}
+.imageboxPopular {
+  background-color: white;
+  width: 250px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+.imageboxPopular p {
+  margin-top: 20px;
+  padding: 5px;
+}
+.imageboxPopular .money {
+  font-weight: 600;
+  color: #999999;
+  padding-bottom: 25px;
+}
+.imageboxPopular img {
+  width: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.sliderPop {
+  height: 600px;
+}
+.sliderPop hr {
+  color: white;
+  font-size: 17pt;
+}
+/* small screen popular item slide */
+
+/*hr blocks*/
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  height: 1.5em;
+  color: #45413e;
+}
+.hr-text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+}
+/*hr blocks*/

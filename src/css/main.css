@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/*maintop */
+.maintop {
+  margin: auto !important;
+}
+/*maintop */
+
+/*footer*/
+#footerDiv {
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  width: 100%;
+}
+#footerDiv li {
+  list-style: none;
+  padding: 0.25em;
+  font-family: "Lato", sans-serif;
+  font-size: 12pt;
+}
+#footerDiv li a {
+  text-decoration: none;
+  color: #2d343a;
+}
+.footerH {
+  font-family: "Lato", sans-serif;
+  font-size: 12pt;
+  font-weight: 900;
+}
+.footericons {
+  display: inline-flex;
+}
+.footericons .fab {
+  color: grey;
+  margin: 10px;
+}
+.footerlistitem {
+  margin-top: 5px;
+}
+.contactMail a {
+  text-decoration: none;
+  color: #2d343a !important;
+}
+.contactTel a {
+  text-decoration: none;
+  color: #2d343a !important;
+}
+
+/*footer*/
+
+/***************************************************************************************************************************************
+*******************************************************************************************************************************
+******************************* *********************************************************************************
+******************************************************************************************************************************/
+
+@media only screen and (min-width: 1280px) {
+  /*large*/
+  .rightmenu {
+    visibility: visible !important;
+    margin-left: auto;
+  }
+
+  .bottomMenu1 {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+  }
+
+  .centermenu .nav-item {
+    font-family: "Lato", sans-serif;
+    font-size: 19px;
+    font-weight: bolder;
+  }
+  .centermenu .nav-link {
+    display: inline-flex !important;
+    height: 100px;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    top: 0 !important;
+    justify-content: center;
+  }
+  .navbar .centermenu {
+    width: 800px;
+    top: 0;
+    height: 100px;
+    margin-left: 20%;
+    justify-content: center;
+    margin-top: 0 !important;
+    padding-left: 6%;
+  }
+  .rightmenu {
+    top: 15px;
+    right: 40px;
+    width: 20%;
+    position: absolute;
+  }
+  .iconsmenu li .fal {
+    font-size: 30px;
+    font-weight: lighter;
+    padding-top: 15px;
+  }
+
+  .brandICON {
+    margin-left: 30%;
+  }
+  .brandICON img {
+    width: 100px;
+  }
+  .OSFGLOBAL #osf {
+    color: #262a33;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 45px;
+    margin-top: 0;
+    padding-top: 0;
+    top: 5px;
+    position: absolute;
+  }
+  .OSFGLOBAL #Academy {
+    color: #85bc23;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    top: 50px;
+    position: absolute;
+  }
+  .OSFGLOBAL {
+    margin-right: auto;
+  }
+  .OSFGLOBAL {
+    display: block !important;
+  }
+}
+
+/***************************************************************************************************************************************
+*******************************************************************************************************************************
+******************************* BIG SCREEN*********************************************************************************
+******************************************************************************************************************************/
+
+@media only screen and (min-width: 768px) {
+  /*medium*/
+  .menu-area:hover > .dropdown-menu {
+    /* hover oldugunda display */
+    display: block;
+  }
+
+  .rightmenu {
+    visibility: hidden;
+  }
+  .modal-content {
+    /*login popup*/
+    width: 600px;
+    height: 700px;
+    align-self: center;
+    position: fixed;
+    border-radius: 15px;
+    padding: 80px;
+  }
+  .eye {
+    bottom: 40px;
+    right: 50px;
+    position: absolute;
+    font-size: 20px;
+  }
+  /*login popup*/
+
+  .iconsmenu li {
+    display: inline-flex;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+
+  .iconsmenu li a {
+    list-style: none;
+    color: #999999;
+    font-size: 20px;
+  }
+  /*
+.rightmenu{
+   position: absolute;
+   top: 20px;
+   right: 3px;
+   width: 300px;
+}
+   */
+  .centermenu li {
+    font-family: "Lato", sans-serif;
+    height: 70px;
+    align-items: flex-end;
+    font-size: 16pt;
+    justify-content: center;
+    padding: 0;
+    display: inline-flexbox;
+  }
+  .centermenu .nav-link {
+    width: 100%;
+  }
+  .centermenu .nav-item {
+    font-family: "Lato", sans-serif;
+    font-size: 19px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 0;
+  }
+
+  .centermenu {
+    height: 150px;
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  .bottomMenu1 {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    height: 80px;
+    z-index: 1;
+    background-color: #262a33;
+  }
+  .bottomMenu1 .far {
+    color: #c8d6e5;
+    padding-top: 20px;
+    margin-left: 40%;
+    font-size: 25px;
+  }
+  .OSFGLOBAL {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /*small*/
+  .rightmenu {
+    display: none;
+  }
+
+  /*login popup*/
+  .eye {
+    bottom: 105px;
+    right: 50px;
+    position: absolute;
+    font-size: 20px;
+  }
+  .modal-content {
+    width: 100%;
+    height: 700px;
+    border-radius: 15px;
+    padding: 30px;
+  }
+
+  #myCarousel .carousel-inner img {
+    height: 600px;
+  }
+  .OSFGLOBAL {
+    display: none;
+  }
+  .brandICON {
+    top: 0;
+    position: absolute !important; /*!!!!!!!!!!*/
+    right: 50%;
+    left: 50%;
+  }
+  .brandICON img {
+    height: 80px;
+  }
+
+  .bottomMenu1 {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    height: 80px;
+    z-index: 100;
+    background-color: #262a33;
+  }
+  .bottomMenu1 .far {
+    color: #c8d6e5;
+    padding-top: 20px;
+    margin-left: 15px;
+    font-size: 25px;
+  }
+  #footerContainer {
+    display: none; /*should be displayed as a dropdown*/
+  }
+  /* full width banner osf theme*/
+}
+
+/********************************************
+********************************************
+******************************************
+END OF 768px**********************************
+****************************************
+******************************************/
+
+.menu-area {
+  position: static;
+}
+.mega-area {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background-color: #1c2735;
+  color: #c8d6e5;
+}
+.mega-area a {
+  color: #c8d6e5;
+}
+.centermenu .mega-area {
+  margin-top: -1px;
+}
+.dropdown-item {
+  padding: 5px 0;
+}
+
+.MAIN {
+  top: 0;
+  position: static; /* asagı akmıyor*/
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+}
+
+.centermenu li .ServicesSection:hover {
+  background-color: #1c2735;
+  color: #c8d6e5 !important;
+  border-bottom: 5px solid mediumspringgreen;
+}
+
+/*login popup*/
+
+.modal-header {
+  padding-bottom: 80px;
+  margin-top: 0px;
+}
+.modal-header .singin {
+  justify-content: center;
+}
+.singin {
+  color: black !important;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  justify-content: center;
+  position: absolute;
+}
+
+#openeye {
+  display: none;
+}
+.login-btn {
+  margin: 40px auto 20px;
+  width: 50%;
+  display: block;
+  outline: none;
+  padding: 10px 0;
+  border: 1px solid #85bc23;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #85bc23;
+  color: white;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  height: 50px;
+}
+.modal-body {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.popupLinks a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
+  color: #44bd32;
+}
+.modal-body {
+  padding-top: 50px;
+}
+.form-group label {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+.form-control {
+  border-radius: 20px;
+  border: 3px solid gainsboro;
+  height: 50px;
+  width: 100%;
+}
+.lato {
+  height: 50px;
+  border-radius: 20px;
+  border: 3px solid white;
+  width: 100%;
+}
+
+/*login popup*/
+
+/*footer for small devices*/
+.small-footer .link {
+  width: 100%;
+  text-align: left;
+}
+.small-footer .dropdown-toggle {
+  font-weight: bold;
+  color: black;
+}
+.small-footer .dropdown-toggle:hover {
+  text-decoration: none;
+}
+.small-footer {
+  margin-bottom: 12%;
+}
+.small-footer .footerLine {
+  text-align: center;
+}
+.small-footer .footerLine .footericons li {
+  margin: 15px;
+  font-size: 20px;
+}
+/*footer for small devices*/
+
+@media only screen and (max-width: 769px) {
+  .nav-item {
+    background-color: #1c2735;
+    padding-left: 10px;
+  }
+  .nav-link {
+    color: white !important;
+  }
+  .navbar-nav {
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}

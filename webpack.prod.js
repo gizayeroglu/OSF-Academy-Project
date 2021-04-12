@@ -40,6 +40,20 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+      {
+        // Load all images as base64 encoding if they are smaller than 8192 bytes
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              name: "[name].[hash:20].[ext]",
+              esModule: false,
+              limit: 8192,
+            },
+          },
+        ],
+      },
     ],
   },
 
