@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -17,14 +18,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/jquery.breadcrumbs-generator.js"></script>
-    </head>
-    <body>
-        <%= require('html-loader!../common/nav.html') %>
- 
-         <div class="container servicesLanding">
+</head>
+
+<body>
+    <%= require('html-loader!../common/nav.html') %>
+        <hr class="hrServices">
+        <div class="container-fluid servicesLanding">
             <hr class="hr-text" data-content="Services" />
-            <div class="filters">
+            <a id="HideFilterMessage">
+                <p class="hidefilter d-md-none">Hide Filter</p>
+            </a>
+            <div class="filters" id="hideFilter">
                 <div class="row rowfilter">
                     <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-md-1 order-sm-1 order-1">
                         <div class="cont1">
@@ -34,7 +38,7 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     $0.00--$100.00
                                 </a>
-        
+
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a class="dropdown-item" href="#">$100.00--$200.00</a>
                                     <a class="dropdown-item" href="#">$200.00--$300.00</a>
@@ -51,7 +55,7 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Ukraine sport
                                 </a>
-        
+
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a class="dropdown-item" href="#">Brand </a>
                                     <a class="dropdown-item" href="#">Brand y</a>
@@ -68,7 +72,7 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Small
                                 </a>
-        
+
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a class="dropdown-item" href="#">Medium</a>
                                     <a class="dropdown-item" href="#">Large</a>
@@ -104,7 +108,7 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Price
                                 </a>
-        
+
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a class="dropdown-item" href="#">Brand</a>
                                     <a class="dropdown-item" href="#">Size</a>
@@ -121,7 +125,7 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     16 per page
                                 </a>
-        
+
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a class="dropdown-item" href="#">20 per page</a>
                                     <a class="dropdown-item" href="#">30 per page</a>
@@ -130,259 +134,310 @@
                             </div>
                         </div>
                     </div>
-        
-        
+
+
                 </div>
             </div>
             <br>
             <p>12,931 results apparel</p>
             <div class="container ServicesPageItems">
-            <div class="row row1">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/popitem3.png') %>">
-                        <p>Kristina Dam Oak Table With White Marble Top</p>
-                        <p class="money">$799.55</p>
+                <div class="row row1">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/popitem3.png') %>">
+                                <p class="ProductName">Kristina Dam Oak Table With White Marble Top</p>
+                                <p class="money">$799.55</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/popitem1.png') %>">
+                                <p class="ProductName">EAMESxCast+Crew-Custom Powder Coated</p>
+                                <p class="money">$799.55</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/featured1.png') %>">
+                                <p class="ProductName">Activate Facial Mask and Charcoal Soap</p>
+                                <p class="money">$129.55</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/featured4.png') %>">
+                                <p class="ProductName">Vitra Cork Stool B,Cork-Design Within Reach</p>
+                                <p class="money">$299.99</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/popitem6.png') %>">
+                                <p class="ProductName">Hay-About A Lounge Chair AAL 93</p>
+                                <p class="money">$659.55</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/popitem5.png') %>">
+                                <p class="ProductName">TORY DESK CALENDAR</p>
+                                <p class="money">$410.99</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/noimage.png') %>">
+                                <p class="ProductName">CH45 Wing Chair on SUITE NY</p>
+                                <p class="money">$330.55</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/noimage.png') %>">
+                                <p class="ProductName">CH45 Wing Chair on SUITE NY</p>
+                                <p class="money">$330.55</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/noimage.png') %>">
+                                <p class="ProductName">Kristina Dam Oak Table With White Marble Top</p>
+                                <p class="money">$2195.00</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/noimage.png') %>">
+                                <p class="ProductName">MONOQ | Ø55 Crossit Table-Wht/Grn </p>
+                                <p class="money">$299.99</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/popitem6.png') %>">
+                                <p class="ProductName">Vitra Cork Stool B,Cork-Design Within Reach</p>
+                                <p class="money">$870.95</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/noimage.png') %>">
+                                <p class="ProductName">Activate Facial Mask and Charcoal Soap</p>
+                                <p class="money">$129.55</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/noimage.png') %>">
+                                <p class="ProductName">Hay-About A Lounge Chair AAL 93</p>
+                                <br>
+                                <p class="money">$659.55</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/popitem7.png') %>">
+                                <p class="ProductName">TORY DESK CALENDAR</p>
+                                <br>
+                                <p class="money">$410.99</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/imggirl.png') %>">
+                                <p class="ProductName">EAMESxCast+Crew-Custom Powder Coated</p>
+                                <p class="money">$330.55</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="servicesLandingImgBox">
+                            <a href="product.html">
+                                <img src="<%= require('../images/noimage.png') %>">
+                                <p class="ProductName">CH45 Wing Chair on SUITE NY</p>
+                                <br>
+                                <p class="money">$330.55</p>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/popitem1.png') %>">
-                        <p>EAMESxCast+Crew-Custom Powder Coated</p>
-                        <p class="money">$799.55</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/featured1.png') %>">
-                        <p>Activate Facial Mask and Charcoal Soap</p>
-                        <p class="money">$129.55</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/featured4.png') %>">
-                        <p>Vitra Cork Stool B,Cork-Design Within Reach</p>
-                        <p class="money">$299.99</p>
-                    </div>
-            
-                </div>
-            
-            
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/popitem6.png') %>">
-                        <p>Hay-About A Lounge Chair AAL 93</p>
-                        <p class="money">$659.55</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/popitem5.png') %>">
-                        <p>TORY DESK CALENDAR</p>
-                        <p class="money">$410.99</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/noimage.png') %>">
-                        <p>CH45 Wing Chair on SUITE NY</p>
-                        <p class="money">$330.55</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/noimage.png') %>">
-                        <p>CH45 Wing Chair on SUITE NY</p>
-                        <p class="money">$330.55</p>
-                    </div>
-            
-                </div>
-            
-            
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/noimage.png') %>">
-                        <p>Kristina Dam Oak Table With White Marble Top</p>
-                        <p class="money">$2195.00</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/noimage.png') %>">
-                        <p>MONOQ | Ø55 Crossit Table-Wht/Grn </p>
-                        <p class="money">$299.99</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/popitem6.png') %>">
-                        <p>Vitra Cork Stool B,Cork-Design Within Reach</p>
-                        <p class="money">$870.95</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/noimage.png') %>">
-                        <p>Activate Facial Mask and Charcoal Soap</p>
-                        <p class="money">$129.55</p>
-                    </div>
-            
-                </div>
-            
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/noimage.png') %>">
-                        <p>Hay-About A Lounge Chair AAL 93</p>
-                        <br>
-                        <p class="money">$659.55</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/popitem7.png') %>">
-                        <p>TORY DESK CALENDAR</p>
-                        <br>
-                        <p class="money">$410.99</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/imggirl.png') %>">
-                        <p>EAMESxCast+Crew-Custom Powder Coated</p>
-                        <p class="money">$330.55</p>
-                    </div>
-            
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="servicesLandingImgBox">
-                        <img src="<%= require('../images/noimage.png') %>">
-                        <p>CH45 Wing Chair on SUITE NY</p>
-                        <br>
-                        <p class="money">$330.55</p>
-                    </div>
-            
-                </div>
-            </div>
             </div>
             <a href=#><input type="button" class="servicesloadMore-btn" value="LOAD MORE"></a>
             <br><br>
-            </div>
-            
-            
-            
-            
-            <!--Featured Products-->
-            <div class="container-fluid featured">
-                <br><br>
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-0">
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <div class="containerpop">
-                            <h5>Featured Products</h5>
-                            <h>Unde omnis iste natus error sit voluptatem</h>
-                            <hr class="hr-text" data-content="///" />
-                        </div>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-            
-                                    <div class="container d-block w-100" alt="First Slide">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <div class="featuredproduct">
+        </div>
+
+
+
+
+        <!--Featured Products-->
+        <div class="container-fluid featured">
+            <br><br>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-0">
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <div class="containerpop">
+                        <h5>Featured Products</h5>
+                        <h>Unde omnis iste natus error sit voluptatem</h>
+                        <hr class="hr-text" data-content="///" />
+                    </div>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+                                <div class="container d-block w-100" alt="First Slide">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="featuredproduct">
+                                                <a href="product.html">
                                                     <img src="<%= require('../images/featured1.png') %>">
                                                     <p>Kristina Dam Oak Table With White Marble</p>
                                                     <h>Awesome</h>
-                                                </div>
-            
+                                                </a>
                                             </div>
-                                            <div class="col-3">
-                                                <div class="featuredproduct">
+
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="featuredproduct">
+                                                <a href="product.html">
                                                     <img src="<%= require('../images/featured2.png') %>">
                                                     <p>Kristina Dam Oak Table With White Marble</p>
                                                     <h>Marketing</h>
-                                                </div>
+                                                </a>
                                             </div>
-                                            <div class="col-3">
-                                                <div class="featuredproduct">
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="featuredproduct">
+                                                <a href="product.html">
                                                     <img src="<%= require('../images/featured3.png') %>">
                                                     <p>Kristina Dam Oak Table With White Marble</p>
                                                     <h>Awesome</h>
-                                                </div>
+                                                </a>
                                             </div>
-                                            <div class="col-3">
-                                                <div class="featuredproduct">
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="featuredproduct">
+                                                <a href="product.html">
                                                     <img src="<%= require('../images/featured4.png') %>">
                                                     <p>Hezy Theme</p>
                                                     <br>
                                                     <h>Marketing</h>
-                                                </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="container d-block w-100" alt="Second Slide">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <div class="featuredproduct">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container d-block w-100" alt="Second Slide">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="featuredproduct">
+                                                <a href="product.html">
                                                     <img src="<%= require('../images/popitem2.png') %>">
                                                     <p>Kristina Dam Oak Table With White Marble</p>
                                                     <h>Awesome</h>
-                                                </div>
+                                                </a>
                                             </div>
-                                            <div class="col-3">
-                                                <div class="featuredproduct">
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="featuredproduct">
+                                                <a href="product.html">
                                                     <img src="<%= require('../images/popitem3.png') %>">
                                                     <p>Kristina Dam Oak Table With White Marble</p>
                                                     <h>Marketing</h>
-                                                </div>
+                                                </a>
                                             </div>
-                                            <div class="col-3">
-                                                <div class="featuredproduct">
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="featuredproduct">
+                                                <a href="product.html">
                                                     <img src="<%= require('../images/popitem4.png') %>">
                                                     <p>Kristina Dam Oak Table With White Marble</p>
                                                     <h>Awesome</h>
-                                                </div>
+                                                </a>
                                             </div>
-                                            <div class="col-3">
-                                                <div class="featuredproduct">
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="featuredproduct">
+                                                <a href="product.html">
                                                     <img src="<%= require('../images/popitem7.png') %>">
                                                     <p>Kristina Dam Oak Table With White Marble</p>
                                                     <h>Awesome</h>
-                                                </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-            
                             </div>
-                            <br><br>
+
                         </div>
+                        <br><br>
                     </div>
                 </div>
             </div>
-            
-            <!--Featured Products-->
+        </div>
 
-<%= require('html-loader!../common/footer.html') %>
-    </body>
-    </html>
+        <!--Featured Products-->
+
+        <%= require('html-loader!../common/footer.html') %>
+
+
+</body>
+
+</html>

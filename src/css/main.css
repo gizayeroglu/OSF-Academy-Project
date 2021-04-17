@@ -4,12 +4,20 @@
   box-sizing: border-box;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 li {
   list-style: none;
 }
-
+.area {
+  background-color: white;
+}
+#navContent {
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
 /*maintop */
 .maintop {
   margin: auto !important;
@@ -30,7 +38,15 @@ li {
 }
 #footerDiv li a {
   text-decoration: none;
-  color: #2d343a;
+  color: #999999;
+  font-weight: 500;
+}
+.contact {
+  color: #262a33;
+  font-weight: 600;
+}
+.footerLine a {
+  color: #262a33;
 }
 .footerH {
   font-family: "Lato", sans-serif;
@@ -47,22 +63,13 @@ li {
 .footerlistitem {
   margin-top: 5px;
 }
-.contactMail a {
-  text-decoration: none;
-  color: #2d343a !important;
-}
-.contactTel a {
-  text-decoration: none;
-  color: #2d343a !important;
-}
 
 /*footer*/
-
-/***************************************************************************************************************************************
-*******************************************************************************************************************************
-******************************* *********************************************************************************
-******************************************************************************************************************************/
-
+@media only screen and (min-width: 1400px) {
+  .navbar .centermenu {
+    margin-left: 30% !important;
+  }
+}
 @media only screen and (min-width: 1280px) {
   /*large*/
   .rightmenu {
@@ -80,60 +87,68 @@ li {
   .centermenu .nav-item {
     font-family: "Lato", sans-serif;
     font-size: 19px;
-    font-weight: bolder;
   }
   .centermenu .nav-link {
-    display: inline-flex !important;
+    display: inline-flex;
     height: 100px;
     top: 0;
     align-items: center;
     width: 100%;
-    top: 0 !important;
     justify-content: center;
+    margin-right: 10px;
   }
   .navbar .centermenu {
-    width: 800px;
+    width: 750px;
     top: 0;
     height: 100px;
-    margin-left: 20%;
+    margin-left: 18%;
     justify-content: center;
     margin-top: 0 !important;
-    padding-left: 6%;
   }
   .rightmenu {
     top: 15px;
-    right: 40px;
-    width: 20%;
+    right: 2%;
+    width: 22%;
     position: absolute;
   }
+  .iconsmenu .nav-item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .iconsmenu .withoutIcon {
+    /* it stays closer than which has badges */
+    margin-left: 10px;
+    margin-right: 4px;
+  }
+
   .iconsmenu li .fal {
     font-size: 30px;
-    font-weight: lighter;
+    font-weight: 500;
     padding-top: 15px;
   }
 
   .brandICON {
-    margin-left: 30%;
+    margin-left: 20%;
   }
   .brandICON img {
-    width: 100px;
+    width: 90px;
+    height: 90px;
   }
   .OSFGLOBAL #osf {
     color: #262a33;
     font-family: "Lato", sans-serif;
     letter-spacing: 5px;
     font-weight: 900;
-    font-size: 45px;
-    margin-top: 0;
-    padding-top: 0;
-    top: 5px;
+    font-size: 40px;
+    top: 15px;
     position: absolute;
   }
   .OSFGLOBAL #Academy {
     color: #85bc23;
     font-family: "Lato", sans-serif;
-    font-size: 24px;
-    top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    top: 53px;
     position: absolute;
   }
   .OSFGLOBAL {
@@ -143,11 +158,6 @@ li {
     display: block !important;
   }
 }
-
-/***************************************************************************************************************************************
-*******************************************************************************************************************************
-******************************* BIG SCREEN*********************************************************************************
-******************************************************************************************************************************/
 
 @media only screen and (min-width: 768px) {
   /*medium*/
@@ -188,14 +198,6 @@ li {
     color: #999999;
     font-size: 20px;
   }
-  /*
-.rightmenu{
-   position: absolute;
-   top: 20px;
-   right: 3px;
-   width: 300px;
-}
-   */
   .centermenu li {
     font-family: "Lato", sans-serif;
     height: 70px;
@@ -304,13 +306,6 @@ li {
   }
   /* full width banner osf theme*/
 }
-
-/********************************************
-********************************************
-******************************************
-END OF 768px**********************************
-****************************************
-******************************************/
 
 .menu-area {
   position: static;
@@ -459,4 +454,25 @@ END OF 768px**********************************
     right: 0;
     position: absolute;
   }
+}
+
+/* badgesss */
+.badge {
+  border: 3px solid #85bc23;
+  width: min-content;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 12pt;
+  color: #85bc23;
+}
+
+.far {
+  font-size: 30px;
+  position: relative;
+}
+
+.badgeContainer .badge {
+  bottom: 18px;
+  left: 18px;
+  position: absolute;
 }

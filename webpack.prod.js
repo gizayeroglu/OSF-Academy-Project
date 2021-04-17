@@ -16,6 +16,7 @@ module.exports = {
     index: "./src/page-index/index.js",
     services: "./src/page-services/services.js",
     error: "./src/page-error/error.js",
+    product: "./src/page-product/product.js",
   },
 
   // how to write the compiled files to disk
@@ -65,6 +66,12 @@ module.exports = {
       inject: true,
       chunks: ["index"],
       filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/page-product/product.html",
+      inject: true,
+      chunks: ["product"],
+      filename: "product.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/page-services/services.html",

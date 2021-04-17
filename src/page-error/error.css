@@ -1,0 +1,140 @@
+/* error page */
+body {
+  background-color: #f1edea;
+}
+.hrError {
+  margin-bottom: 0;
+  height: 1px;
+  background-color: #f0e3d8;
+  margin-top: 0;
+}
+.error {
+  background: url("../images/ops\ \(2\).png") no-repeat;
+  border-radius: 20px;
+  margin-bottom: 70px;
+}
+.error img {
+  width: 100%;
+}
+.gobackError a {
+  font-size: 13pt;
+  font-weight: 600;
+  color: #85bc23;
+  font-family: "Lato", sans-serif;
+}
+.errortypings {
+  padding-top: 10%;
+  padding-right: 10%;
+}
+.error-messages {
+  font-family: "Lato", sans-serif;
+  font-size: 13pt;
+  color: #262a33;
+  font-weight: 400;
+}
+
+.searchingBlock #searchbar {
+  border: none;
+  outline: none;
+  width: 88%;
+  background: transparent;
+}
+.searchingBlock {
+  margin-top: 7%;
+  margin-bottom: 15%;
+}
+.oops {
+  color: #85bc23;
+  font-size: 140px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  margin-left: 17%;
+  margin-top: 32%;
+}
+.errortypings h1 {
+  color: black;
+  font-size: 18pt;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+.searchingBlock .far {
+  font-size: 25px;
+  color: #999999;
+  margin-top: 1%;
+}
+.searchingBlock .searchbarwithicon {
+  border: 3px solid #e8e2d6;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+}
+/* error page */
+
+@media only screen and (max-width: 1200px) {
+  /*backgorund image will not displayed */
+  .error {
+    background: white;
+  }
+  .oops {
+    color: #85bc23;
+    font-size: 100px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  height: 1.5em;
+  color: #45413e;
+}
+.hr-text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+}
+/*breadcrumbs
+#breadcrumbs li {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #45413e;
+}
+#breadcrumbs {
+  text-align: center;
+  margin-top: 30px;
+}
+#breadcrumbs li a {
+  color: #85bc23;
+}
+#breadcrumbs li:not(:first-child) {
+  margin-left: 0.4em;
+}
+#breadcrumbs li:not(:first-child):before {
+  content: "  /  ";
+  margin-right: 0.4em; 
+}*/
+/*breadcrumbs*/
+/* error page */

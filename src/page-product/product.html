@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.breadcrumbs-generator.js"></script>
+</head>
+
+<body>
+    <%= require('html-loader!../common/nav.html') %>
+        <hr class="hrProduct">
+        <hr class="hr-text" data-content="Archi Desk Accessories Pen Cup" />
+        <div class="ProductDetailPageMain">
+            <div class="container productDetails">
+                <div class="row">
+                    <div class="col-xl-6 presentedImage">
+                        <img src="<%= require('../images/product1.jpg') %>" alt="Product" id="presentedImage">
+                    </div>
+                    <div class="col-xl-2">
+                        <ul class="imagesList">
+                            <li><a id="image1"><img src="<%= require('../images/product1-small.jpg') %>"></a></li>
+                            <li><a id="image2"><img src="<%= require('../images/product2-small.jpg') %>"></a></li>
+                            <li><a id="image3"> <img src="<%= require('../images/product3-small.jpg') %>"></a></li>
+                            <li><a id="image4"><img src="<%= require('../images/product4-small.jpg') %>"></a></li>
+                        </ul>
+                        <div class="smallscreenImageButtonsDiv">
+                            <ul class="smallscreenImageButtons d-md-none">
+                                <!---display md none-->
+                                <li><button class="slideButton" id="imageButton1"></button></li>
+                                <li><button class="slideButton" id="imageButton2"></button></li>
+                                <li><button class="slideButton" id="imageButton3"></button></li>
+                                <li><button class="slideButton" id="imageButton4"></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="container">
+                            <div class="row priceProduct">
+                                <div class="col-8">
+                                    <h5>$229.99</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="dropdown show">
+                                        <a class="btn  dropdown-toggle productDropDown" href="#" role="button"
+                                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            <input type=button class="btn-product"> Dark Gray
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Black</a>
+                                            <a class="dropdown-item" href="#">Blue</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-12">
+
+                                    <div class="input-group">
+                                        <span class="input-group-prepend">
+                                            <button type="button" class="button-minus" id="minusItem">
+                                                <span class="fa fa-minus"></span>
+                                            </button>
+                                        </span>
+                                        <input type="number" id="quantityBox" value="2" min="1">
+                                        <span class="input-group-append">
+                                            <button type="button" class="button-plus" id="plusItem">
+                                                <span class="fa fa-plus"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12">
+                                    <input type="button" value="ADD TO CHART" class="addChart" id="buyNow">
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12 productDetailedParagraph">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantum
+                                        doloremque
+                                        laundantium,
+                                        totam rem aperiam,eaque ipsa quae ab illo inventore Beatae vitae dicta sunt
+                                        explicabo.
+                                        Nemo enim ipsam voluptatem quia voluptas
+
+                                    </p>
+                                    <p class="notvisible" id="showit">Sed ut perspiciatis unde omnis iste natus error
+                                        sit
+                                        voluptatem accusantum doloremque laundantium,
+                                        totam rem aperiam,eaque ipsa quae ab illo inventore Beatae vitae dicta sunt
+                                        explicabo.
+                                        Nemo enim ipsam voluptatem quia voluptas
+
+                                    </p>
+                                    <a id="readMore">
+                                        <p class="readmore">Read more</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <ul class="productDetailIcons">
+                                        <li>
+                                            <p>Share</p>
+                                        </li>
+                                        <br>
+                                        <li><a href="https://tr-tr.facebook.com/"><i class="fab fa-facebook-f"></i></li>
+                                        </a>
+                                        <li><a href="https://www.google.com/account/about/"><i
+                                                    class="fab fa-google-plus-g"></i></li></a>
+                                        <li><a href="https://twitter.com/?lang=tr"><i class="fab fa-twitter"></i></li>
+                                        </a>
+                                        <li><a href="https://www.pinterest.it/login/"><i class="fab fa-pinterest-p"></i>
+                                        </li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tab-->
+            <div class="DescriptionProductTabs">
+                <br>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#nav-description">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#nav-Info-tab">Additional Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#nav-Rev-tab">Reviews (3)</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content container-fluid">
+                    <div id="nav-description" class="container tab-pane active"><br>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula
+                                        eget
+                                        dolor. Aenean massa.
+                                    </p>
+                                    <p>
+                                        Aenean commodo ligula eget dolor.Aenan massa. Cum sociis natoque penatibus et
+                                        magnis
+                                        dis penatibus montes,nascetur ridiculus mus.
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <p>Cum sociis natoque penatibus et magnis
+                                        dis penatibus montes,nascetur ridiculus mus. Donec quam felis,sem. Nulla
+                                        consequat
+                                        massa
+                                        quis enim.
+                                        Donec pede
+                                        justo,fringilla vel,aliquet nec,vulpatate eget,arcu. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nav-Info-tab" class="container tab-pane fade"><br>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <p>Cum sociis natoque penatibus et magnis
+                                        dis penatibus montes,nascetur ridiculus mus. Donec quam felis,sem. Nulla
+                                        consequat
+                                        massa
+                                        quis enim.
+                                        Donec pede
+                                        justo,fringilla vel,aliquet nec,vulpatate eget,arcu. </p>
+
+                                </div>
+                                <div class="col-6">
+                                    <p>Aenean commodo ligula eget dolor.Aenan massa. Cum sociis natoque penatibus et
+                                        magnis
+                                        dis penatibus montes,nascetur ridiculus mus.
+                                    </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula
+                                        eget
+                                        dolor. Aenean massa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nav-Rev-tab" class="container tab-pane fade"><br>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <p>Aenean commodo ligula eget dolor.Aenan massa. Cum sociis natoque penatibus et
+                                        magnis
+                                        dis penatibus montes,nascetur ridiculus mus.
+                                    </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula
+                                        eget
+                                        dolor. Aenean massa.
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <p>
+                                        Cum sociis natoque penatibus et magnis
+                                        dis penatibus montes,nascetur ridiculus mus. Donec quam felis,sem. Nulla
+                                        consequat
+                                        massa
+                                        quis enim.
+                                        Donec pede
+                                        justo,fringilla vel,aliquet nec,vulpatate eget,arcu.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Tab-->
+
+        </div>
+
+
+
+
+
+
+        <!---Small screen popular items  slider-->
+        <br>
+        <div class="sliderPop ProductScreen d-md-none">
+            <hr class="hr-text textPopularItemsSlider" data-content="Popular Items" />
+            <div id="myCarousel3" class="carousel slide" data-ride="carousel3">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="imageboxPopular">
+                            <img src="<%= require('../images/popitem1.png') %>">
+                            <p>Kristina Dam Oak Table With White Marble Top</p>
+                            <p class="money">$799.55</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imageboxPopular">
+                            <img src="<%= require('../images/popitem4.png') %>">
+                            <p>Activate Facial Mask and Charcoal Soap</p>
+                            <p class="money">$129.55</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imageboxPopular">
+                            <img src="<%= require('../images/popitem2.png') %>">
+                            <p>Vitra Cork Stool B,Cork-Design Within Reach</p>
+                            <p class="money">$299.99</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imageboxPopular">
+                            <img src="<%= require('../images/popitem3.png') %>">
+                            <p>Hay-About A Lounge Chair AAL 93</p>
+                            <p class="money">$659.55</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imageboxPopular">
+                            <img src="<%= require('../images/popitem6.png') %>">
+                            <p>CH45 Wing Chair on SUITE NY</p>
+                            <p class="money">$330.55</p>
+                        </div>
+
+                    </div>
+                </div>
+                <br><br>
+                <ol class="carousel-indicators">
+
+                    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+
+                    <li data-target="#myCarousel3" data-slide-to="1"></li>
+
+                    <li data-target="#myCarousel3" data-slide-to="2"></li>
+
+                    <li data-target="#myCarousel3" data-slide-to="3"></li>
+
+                    <li data-target="#myCarousel3" data-slide-to="4"></li>
+
+                </ol>
+            </div>
+            <div class="scrollingButtonDiv">
+                <a href="#"><input type="button" value="SCROLL TO TOP" class="scrolltop"></a>
+            </div>
+        </div>
+
+
+        <!---Small screen popular items  slider-->
+
+
+
+
+        <!--PopITtemList-->
+        <div class="container-fluid popitemProduct">
+            <hr class="hr-text popitemtext" data-content="POPULAR ITEMS" />
+            <div class="row ">
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="popitemlist">
+                        <img src="<%= require('../images/imggirl.png') %>">
+                        <p>Kristina Dam Oak Table With White Marble Top</p>
+                        <p class="price">$799.55</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="popitemlist">
+                        <img src="<%= require('../images/featured2.png') %>">
+                        <p>Kristina Dam Oak Table With White Marble Top</p>
+                        <p class="price">$2195.00</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="popitemlist">
+                        <img src="<%= require('../images/popitem4.png') %>">
+                        <p>Activate Facial Mask and Charcoal Soap</p>
+                        <p class="price">$129.55</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="popitemlist">
+                        <img src="<%= require('../images/featured3.png') %>">
+                        <p>Cocktail Table Walnut|YES</p>
+                        <p class="price">$629.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--Benefits Content--->
+        <div class="container-fluid benefit">
+            <div class="row">
+                <div class="col-xl-1 col-lg-2  col-md-2 col-sm-6 col-6 order-lg-1 order-md-1 order-sm-1 order-1">
+                    <img src="<%= require('../images/focus.png') %>">
+                </div>
+                <div class="col-xl-3 col-lg-2 col-md-2 col-sm-6 col-6 order-lg-2 order-md-2 order-sm-2 order-2">
+                    <div class="benefits">
+                        <h5>FOCUS</h5>
+                        <p>Our unwavering focus on superior service delivery and building next generation competencies
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-1 col-lg-2 col-md-2 col-sm-6 col-6 order-lg-3 order-md-3 order-sm-4 order-4">
+                    <img src="<%= require('../images/don.png') %>">
+                </div>
+                <div class=" col-xl-3 col-lg-2 col-md-2 col-sm-6 col-6 order-lg-4 order-md-4 order-sm-3 order-3 ">
+                    <div class="benefits">
+                        <h5>METHOD</h5>
+                        <p>A standardized methodology designed to deliver measurable business results and predictable
+                            costs
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-1 col-lg-2 col-md-2 col-sm-6  col-6 order-lg-5 order-md-5 order-sm-5 order-5">
+                    <img src="<%= require('../images/task1.png') %>">
+                </div>
+                <div class="col-xl-3 col-lg-2 col-md-2 col-sm-6  col-6 order-lg-6 order-md-6 order-sm-6 order-6">
+                    <div class="benefits">
+                        <h5>KNOWLEDGE</h5>
+                        <p>A highly skilled, proactive workface that reliably improves each client's ROI while
+                            mitigating
+                            their
+                            business risk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Benefits Content--->
+
+
+        <%= require('html-loader!../common/footer.html') %>
+</body>
+
+</html>

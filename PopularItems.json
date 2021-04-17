@@ -1,0 +1,22 @@
+[
+    {
+        "ProductName":"Kristina Dam Oak Table With White Marble Top",
+        "ImgSource":"./src/images/popitem2.png",
+        "Price":"$799.55"
+    },
+    {
+        "ProductName":"Activate Facial Mask and Charcoal Soap",
+        "ImgSource":"./src/images/popitem3.png",
+        "Price":"$129.55"
+    },
+    {
+        "ProductName":"Vitra Cork Stool B,Cork-Design Within Reach",
+        "ImgSource":"./src/images/popitem6.png",
+        "Price":"$299.99"
+    },
+    {
+        "ProductName":"Hay-About A Lounge Chair AAL 93",
+        "ImgSource":"./src/images/popitem4.png",
+        "Price":"$659.55"
+    }
+]

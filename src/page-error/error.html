@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+    <%= require('html-loader!../common/nav.html') %>
+<hr class="hrError">
+        <div class="container">
+            <hr class="hr-text" data-content="404" />
+        </div>
+
+        <div class="container ErrorPage">
+            <div class="row error">
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h1 class="oops">Oops!</h1>
+                </div>
+
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 errortype">
+                    <div class="errortypings">
+                        <h1>Sorry,this page could not be found!</h1>
+                        <p class="error-messages">
+                            Aenan commado ligula eget dolor. Aenan massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                        <p class="error-messages">
+                            Lorem impsum dolor sit amet, consectetuer adipiscing elit. Aenan
+                            commodo ligula eget dolor. Aenan massa.
+                        </p>
+                        <p class="gobackError">
+                            <a href="index.html">Go back to Homepage</a>
+                        </p>
+
+                        <div class="searchingBlock">
+                            <h1>Search our site</h1>
+                            <div class="searchbarwithicon">
+                                <input type="text" id="searchbar" placeholder="  SEARCH" />
+                                <i class="far fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <%= require('html-loader!../common/footer.html') %>
+</body>
+
+</html>

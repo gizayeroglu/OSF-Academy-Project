@@ -1,4 +1,10 @@
 /* Services */
+.hrServices {
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 2px;
+  background-color: #f0e3d8;
+}
 .servicesLanding {
   background-color: #f1edea;
   margin: auto;
@@ -14,15 +20,21 @@
 }
 .servicesLandingImgBox {
   width: 250px;
-  height: 350px;
+  height: 380px;
   background-color: white;
   margin-top: 25px;
   border-radius: 10px;
   text-align: center;
 }
 .servicesLandingImgBox p {
-  font-size: 12pt;
   margin-top: 5px;
+}
+.ProductName {
+  color: #262a33;
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+  font-size: 11pt;
+  font-weight: 500;
 }
 .servicesLandingImgBox .money {
   color: #999999;
@@ -213,4 +225,14 @@
 .containerpop h5 {
   font-weight: 700;
   font-size: 40px;
+}
+/* services hide filter */
+.hidefilter {
+  cursor: pointer;
+  color: #85bc23;
+  font-weight: 600;
+}
+/* services hide filter */
+a {
+  text-decoration: none !important;
 }
