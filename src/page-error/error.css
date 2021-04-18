@@ -114,27 +114,5 @@ body {
   padding: 0 0.5em;
   line-height: 1.5em;
 }
-/*breadcrumbs
-#breadcrumbs li {
-  display: inline-block;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  font-size: 17px;
-  color: #45413e;
-}
-#breadcrumbs {
-  text-align: center;
-  margin-top: 30px;
-}
-#breadcrumbs li a {
-  color: #85bc23;
-}
-#breadcrumbs li:not(:first-child) {
-  margin-left: 0.4em;
-}
-#breadcrumbs li:not(:first-child):before {
-  content: "  /  ";
-  margin-right: 0.4em; 
-}*/
-/*breadcrumbs*/
+
 /* error page */

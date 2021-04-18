@@ -27,6 +27,20 @@
     <%= require('html-loader!../common/nav.html') %>
         <hr class="hrIndex">
         <br>
+        <!---cookie policy-->
+        <div class="cookieContiner">
+            <input type="button" class="closeCookie" value="X">
+            <h5>This website uses cookies</h5>
+            <p>OSF uses its own and third-party cookies for statistical purposes, to know your preferences,
+                for website performance
+                and interaction with social media offering publicity tailored to your interests. If you continue
+                browsing,
+                we consider that you accept its use.
+                You can expand this information consulting our <a href="#">Cookies Policy Page</a>
+            </p>
+            <input type="button" class="acceptCookie" value="ACCEPT">
+        </div>
+        <!---cookie policy-->
 
         <!-------crosual-->
         <div class="container maintop">
@@ -246,7 +260,6 @@
                                     <div class="row">
                                         <div class="col-12 price-buynowCol">
                                             <a href="product.html"><button class="priceButton">$659.55</button></a>
-                                            <p class="divider">|</p>
                                             <button class="buynowButton" onclick="buyNow()">BUY NOW</button>
                                         </div>
                                     </div>

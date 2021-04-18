@@ -28,10 +28,12 @@ body {
   color: #85bc23;
   text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 }
-a {
-  text-decoration: none !important;
+.readmore:hover {
+  text-decoration: underline;
 }
+
 .productDetailIcons p {
   color: #999999;
   margin-right: 30px;

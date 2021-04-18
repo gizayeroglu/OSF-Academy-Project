@@ -33,19 +33,26 @@ button.addEventListener("click", function () {
   myRequest.send();
 });
 
-/*
 const storageType = localStorage;
 const consentPropertyName = "osf-concent";
-
+let showPopup = document.querySelector(".cookieContiner");
+let okeycookie = document.querySelector(".acceptCookie");
+let closecookie = document.querySelector(".closeCookie");
 const shouldShowPopUp = () => !storageType.getItem(consentPropertyName);
 const saveToStorage = () => storageType.setItem(consentPropertyName, true);
 
-window.onload = () => {
+setTimeout(function () {
   if (shouldShowPopUp()) {
-    const consent = confirm("Agree to policy");
-    if (consent) {
-      saveToStorage();
+    if ((showPopup.style.display = "none")) {
+      showPopup.style.display = "block";
     }
   }
-};
-*/
+  okeycookie.addEventListener("click", function () {
+    saveToStorage();
+    showPopup.style.display = "none";
+  });
+
+  closecookie.addEventListener("click", function () {
+    showPopup.style.display = "none";
+  });
+}, 10000);

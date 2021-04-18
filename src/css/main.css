@@ -18,6 +18,12 @@ li {
   right: 0;
   position: fixed;
 }
+.dropPhoto {
+  background-color: #1c2735 !important;
+}
+.dropPhoto img {
+  height: 350px;
+}
 /*maintop */
 .maintop {
   margin: auto !important;
@@ -254,7 +260,6 @@ li {
   .rightmenu {
     display: none;
   }
-
   /*login popup*/
   .eye {
     bottom: 105px;
@@ -476,3 +481,30 @@ li {
   left: 18px;
   position: absolute;
 }
+
+/*breadcrumbs*/
+.breadcrumbsList {
+  display: none;
+}
+#breadcrumbs li {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #45413e;
+}
+#breadcrumbs {
+  text-align: center;
+  margin-top: 50px;
+}
+#breadcrumbs li a {
+  color: #85bc23;
+}
+#breadcrumbs li:not(:first-child) {
+  margin-left: 0.4em;
+}
+#breadcrumbs li:not(:first-child):before {
+  content: "  /  ";
+  margin-right: 0.4em;
+}
+/*breadcrumbs*/

@@ -18,12 +18,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../src/js/jquery.breadcrumbs-generator.js"></script>
 </head>
-
 <body>
     <%= require('html-loader!../common/nav.html') %>
         <hr class="hrServices">
         <div class="container-fluid servicesLanding">
+            <!--breadcrumb-->
+                <ol id="breadcrumbs"></ol>
+                <ul id="sitemaps">
+                    <li class="breadcrumbsList">
+                        <a href="index.html">Home</a>
+                        <ul>
+                            <li><a href="error.html">404</a></li>
+                            <li><a href="services.html"> OSF Theme</a>
+                                <ul>
+                                    <li><a href="product.html">Archi Desk Accessories Pen Cup</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            <!--breadcrumb-->
             <hr class="hr-text" data-content="Services" />
             <a id="HideFilterMessage">
                 <p class="hidefilter d-md-none">Hide Filter</p>
@@ -437,7 +453,11 @@
 
         <%= require('html-loader!../common/footer.html') %>
 
-
+    <script>
+        $(function () {
+            $("#breadcrumbs").breadcrumbsGenerator();
+        });
+    </script>
 </body>
 
 </html>

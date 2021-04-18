@@ -186,6 +186,16 @@ a {
 .loadmore .fas {
   color: white;
 }
+.loadmore:hover {
+  background-color: #85bc23;
+  color: #262a33;
+}
+.loadmore:hover .fas {
+  color: #262a33;
+}
+.loadmore:hover .loadmore-btn {
+  color: #262a33;
+}
 .loadmore-btn {
   background: transparent;
   border: none;
@@ -422,7 +432,6 @@ a {
   opacity: 0.2;
 }
 .staticOne {
-  z-index: -1;
   background: linear-gradient(rgba(199, 21, 133, 0.8), rgba(5, 5, 177, 0.4));
 }
 .middleStatic {
@@ -462,26 +471,26 @@ a {
 }
 .BuynowDiv button {
   background-color: transparent;
-  border: none;
+  border-top: none;
+  border-bottom: none;
 }
 .priceButton {
   color: #85bc23;
   font-weight: 600;
+  border: none;
 }
 .price-buynowCol {
   display: inline-flex;
   height: 40px;
   align-items: center;
 }
-.divider {
-  font-size: 40px;
-  color: #f1edea;
-  font-weight: 300;
-  margin-left: 2px;
-  margin-right: 2px;
-}
 .buynowButton {
   font-weight: 700;
+  border-left: 3px solid #f1edea;
+  border-right: none;
+  margin-left: 8px;
+  padding-left: 5px;
+  height: 38px;
 }
 .PopItemsPrice {
   font-size: 14px;
@@ -498,3 +507,56 @@ a {
   margin-right: 8px;
 }
 /*popular items hover overlay-static */
+
+/* Cookie container */
+
+.cookieContiner {
+  padding: 20px;
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  opacity: 1;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  border-radius: 20px;
+  width: 1000px;
+  height: 250px;
+  left: 50%;
+  top: 50%;
+  margin-left: -500px;
+  margin-top: -125px;
+}
+.cookieContiner a {
+  color: #85bc23;
+}
+.cookieContiner h5 {
+  color: #85bc23;
+  font-weight: 800;
+  font-size: 13pt;
+}
+.cookieContiner p {
+  width: 60%;
+  font-weight: 400;
+  font-size: 12pt;
+}
+.closeCookie {
+  float: right;
+  margin-right: 5px;
+  color: black;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 19px;
+  margin-top: 5px;
+}
+.acceptCookie {
+  float: right;
+  margin-right: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #85bc23;
+  color: white;
+  width: 100px;
+  height: 35px;
+}
+/* Cookie container */

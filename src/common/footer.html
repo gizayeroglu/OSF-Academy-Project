@@ -3,7 +3,7 @@
     <div class="container-fluid bigfooter" id="footerContainer" style="background-color: white;">
         <div class="row justify-content-center" id="footerDiv">
             <div class="col-lg-2 footerLine contact">
-                &copy; Copyright 2021.
+                &copy; Copyright <span id="year"></span>
                 <p>All rights Reserved</p>
                 <h5 class="footerH">CONTACT</h5>
                 <p>Headquarters:</p>
@@ -86,7 +86,7 @@
 
     <div class="small-footer d-md-none">
         <div class="Copyright">
-            &copy; Copyright 2021.
+            &copy; Copyright <span id="smallDeviceYear"></span>
             <p>All rights Reserved</p>
         </div>
         <div class="dropdown show">
@@ -206,4 +206,13 @@
             z.style.display = "block";
         }
     }
+    </script>
+
+    <script>
+        let year = new Date();
+        let currentYear=document.getElementById("year").innerHTML;
+        let smallDeviceYear=document.getElementById("smallDeviceYear").innerHTML;
+        currentYear=year.getFullYear();
+        document.getElementById("year").innerHTML=currentYear;
+        document.getElementById("smallDeviceYear").innerHTML = currentYear;
     </script>
