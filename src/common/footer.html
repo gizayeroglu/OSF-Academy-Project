@@ -87,62 +87,45 @@
     <div class="small-footer d-md-none">
         <div class="Copyright">
             &copy; Copyright <span id="smallDeviceYear"></span>
-            <p>All rights Reserved</p>
+            <p>All rights Reserved.</p>
         </div>
-        <div class="dropdown show">
-            <a class="link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                CONTACT
-            </a>
+        <div class="dropmenufooter">
+            <a onclick="dropdownmenuContact()"><h5>CONTACT <span class="dropdown-toggle"></span></h5>
+                <ul id="dropmenufooterContact">
+                    <li>Headquarters:</li>
+                    <li>5600,Blvd. des Galeries, Bur 530</li>
+                    <li><p>Quebec,Quebec G2K 2H6</p></li>
+                    <li><p><a href="mailto:contact@osf-global.com">contact@osf-global.com</a></p></li>
+                    <li><p><a href="tel:+1(888)548-4344">+1(888)548-4344</a></p></li>
+                </ul>
+            <a onclick="dropdownmenuCategoriest()"><h5>CATEGORIEST <span class="dropdown-toggle"></span></h5>
+                <ul id="dropmenufooterCategoriest">
+                    <li><a href="error.html">Alcohol</a></li>
+                    <li><a href="error.html">Art</a></li>
+                    <li><a href="error.html">Books</a></li>
+                    <li><a href="error.html">Drink</a></li>
+                    <li><a href="error.html">Electronics</a></li>
+                    <li><a href="error.html">Home</a></li>
+                    <li><a href="error.html">Jewellery</a></li>
+                    <li><a href="error.html">Kids&Baby</a></li>
+                    <li><a href="error.html">Men's Fashion</a></li>
+                    <li><a href="error.html">Mobile</a></li>
+                    <li><a href="error.html">Motorcycles</a></li>
+                    <li><a href="error.html">Movies</a></li>
+                    <li><a href="error.html">Music</a></li>
+                    <li><a href="error.html">Sport</a></li>
+                    <li><a href="error.html">Toys</a></li>
+                    <li><a href="error.html">Travel</a></li>
+                    <li><a href="error.html">Women's Fashion</a></li>
+                </ul>
+            <a onclick="dropdownmenuAbout()"><h5>ABOUT <span class="dropdown-toggle"></span></h5>
+              <ul id="dropmenufooterAbout">
+                    <li><a href="error.html">About us</a></li>
+                    <li><a href="error.html">Delivery</a></li>
+                    <li><a href="error.html">Testimonials</a></li>
+                    <li><a href="error.html">Contact</a></li>
+              </ul>
 
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <p>Headquarters:</p>
-                <p>5600,Blvd. des Galeries, Bur 530</p>
-                <p>Quebec,Quebec G2K 2H6</p>
-                 <p><a href="mailto:contact@osf-global.com">contact@osf-global.com</a></p>
-                <p><a href="tel:+1(888)548-4344">+1(888)548-4344</a></p>
-            </div>
-        </div>
-
-        <div class="dropdown show">
-            <a class="link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                CATEGORIEST
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="error.html">Alcohol</a>
-                <a class="dropdown-item" href="error.html">Art</a>
-                <a class="dropdown-item" href="error.html">Books</a>
-                <a class="dropdown-item" href="error.html">Drink</a>
-                <a class="dropdown-item" href="error.html">Electronics</a>
-                <a class="dropdown-item" href="error.html">Home</a>
-                <a class="dropdown-item" href="error.html">Jewellery</a>
-                <a class="dropdown-item" href="error.html">Kids&Baby</a>
-                <a class="dropdown-item" href="error.html">Men's Fashion</a>
-                <a class="dropdown-item" href="error.html">Mobile</a>
-                <a class="dropdown-item" href="error.html">Motorcycles</a>
-                <a class="dropdown-item" href="error.html">Movies</a>
-                <a class="dropdown-item" href="error.html">Music</a>
-                <a class="dropdown-item" href="error.html">Sport</a>
-                <a class="dropdown-item" href="error.html">Toys</a>
-                <a class="dropdown-item" href="error.html">Travel</a>
-                <a class="dropdown-item" href="error.html">Women's Fashion</a>
-            </div>
-        </div>
-        <div class="dropdown show">
-            <a class="link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                ABOUT
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="error.html">About us</a>
-                <a class="dropdown-item" href="error.html">Delivery</a>
-                <a class="dropdown-item" href="error.html">Testimonials</a>
-                <a class="dropdown-item" href="error.html">Contact</a>
-            </div>
-        </div>
         <div class=" footerLine">
             <ul class="footericons">
                 <li><a href="https://tr-tr.facebook.com/"><i class="fab fa-facebook-f"></i></li></a>
@@ -152,7 +135,12 @@
             </ul>
         </div>
     </div>
+    </div>
 </footer>
+
+
+
+
 <script>
     function showPopUp() {
         var formContentPassword = $('#myPassword').val();
@@ -216,3 +204,35 @@
         document.getElementById("year").innerHTML=currentYear;
         document.getElementById("smallDeviceYear").innerHTML = currentYear;
     </script>
+
+
+<script>
+    function dropdownmenuAbout(){
+       let showAbout= document.getElementById("dropmenufooterAbout")
+       if(showAbout.style.display=="none"){
+           showAbout.style.display="block";
+       }else{
+           showAbout.style.display="none";
+       }
+
+    }
+
+    function dropdownmenuCategoriest() {
+      let showCategoriest=document.getElementById("dropmenufooterCategoriest");
+      if(showCategoriest.style.display=="none"){
+          showCategoriest.style.display="block";
+      }else{
+          showCategoriest.style.display="none";
+      }
+    }
+
+    function dropdownmenuContact() {
+        let showContact = document.getElementById("dropmenufooterContact");
+        if (showContact.style.display == "none") {
+            showContact.style.display = "block";
+        }
+        else{
+            showContact.style.display="none";
+        }
+    }
+</script>
