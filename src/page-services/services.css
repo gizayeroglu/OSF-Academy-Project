@@ -162,43 +162,56 @@
 .featured {
   background-color: #262a33;
 }
+.hrContainer .menuServices {
+  color: #45413e;
+  font-size: 55px;
+  font-weight: 1000;
+}
+.hrContainer .serviceshr {
+  height: 2px;
+  background-color: white;
+}
+.hrContainer .hrColumns {
+  margin: auto;
+}
+.hrContainer {
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+.FeaturedProductsHr .serviceshr {
+  height: 2px;
+  background-color: white;
+}
+.FeaturedProductsHr .hrIndex {
+  font-size: 30px;
+  font-weight: 600;
+}
+.FeaturedProductsHr .hrColumns {
+  margin: auto;
+}
+.FeaturedProductsHr button {
+  width: 30px;
+  background-color: transparent;
+  height: 30px;
+}
+.FeaturedProductsHr {
+  margin-bottom: 20px;
+  width: 700px;
+}
 .carousel-control-prev {
-  top: -270px;
+  left: 40%;
+  top: -15%;
   position: absolute;
 }
 .carousel-control-next {
-  top: -270px;
+  right: 40%;
+  top: -15%;
   position: absolute;
 }
-/*featured products */
-.hr-text {
-  line-height: 1em;
-  position: relative;
-  outline: none;
-  border: none;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-size: 50px;
-  height: 1.5em;
-  color: #45413e;
-}
-.hr-text:before {
-  content: "";
-  background: linear-gradient(to right, transparent, #818078, transparent);
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 1px;
-}
-.hr-text:after {
-  content: attr(data-content);
-  position: relative;
-  display: inline-block;
-  padding: 0 0.5em;
-  line-height: 1.5em;
-}
+/*hr */
 @media only screen and (max-width: 1200px) {
   .featured {
     display: none;

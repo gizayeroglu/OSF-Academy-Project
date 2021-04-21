@@ -29,16 +29,15 @@
         <br>
         <!---cookie policy-->
         <div class="cookieContiner">
-            <input type="button" class="closeCookie" value="X">
+            <button class="closeCookie"><i class="fal fa-times"></i></button>
             <h5>This website uses cookies</h5>
-            <p>OSF uses its own and third-party cookies for statistical purposes, to know your preferences,
+               <p> OSF uses its own and third-party cookies for statistical purposes, to know your preferences,
                 for website performance
                 and interaction with social media offering publicity tailored to your interests. If you continue
                 browsing,
                 we consider that you accept its use.
                 You can expand this information consulting our <a href="#">Cookies Policy Page</a>
-            </p>
-            <input type="button" class="acceptCookie" value="ACCEPT">
+                </p><input type="button" class="acceptCookie" value="ACCEPT">
         </div>
         <!---cookie policy-->
 
@@ -537,53 +536,7 @@
                     document.getElementById("badgeSmallHeart").innerHTML = favsmall;
                 }
 
-                function showPopUp() {
-                    var formContentPassword = $("#myPassword").val();
-                    var upper = /[A-Z]/g;
-                    var numeric = /[0-9]/g;
-                    var special = /[!@#\$%\^&\*]/g;
-
-                    if (formContentPassword == "") {
-                        alert("Enter your password");
-                    } else if (formContentPassword.length < 6) {
-                        alert("Your password should be at least 6 char length!");
-                    } else if (formContentPassword.match(numeric) < 1) {
-                        alert("Your password should contain a numeric character");
-                    } else if (formContentPassword.match(upper) < 1) {
-                        alert("Your password should contain an uppser case letter");
-                    } else if (formContentPassword != "") {
-                        /*
-                        else if(formContentPassword.match(special)<1){
-                            alert("Your password should contain a special character")
-                        }
-                        */
-                        alert("Signed in");
-                    } else {
-                        alert("Something went wrong!");
-                    }
-                }
-
-                function myFunction() {
-                    let x = document.getElementById("myPassword");
-                    let y = document.getElementById("openeye");
-                    let z = document.getElementById("closeeye");
-
-                    if (x.type === "password") {
-                        x.type = "text";
-                        y.style.display = "block";
-                        z.style.display = "none";
-                    } else {
-                        x.type = "password";
-                        y.style.display = "none";
-                        z.style.display = "block";
-                    }
-                }
-
-
-
             </script>
-
-
 
 </body>
 

@@ -6,9 +6,10 @@
                 &copy; Copyright <span id="year"></span>
                 <p>All rights Reserved</p>
                 <h5 class="footerH">CONTACT</h5>
-                <p>Headquarters:</p>
-                <p>5600,Blvd. des Galeries, Bur 530</p>
-                <p>Quebec,Quebec G2K 2H6</p>
+                 <p>Headquarters:
+                 <br>
+                5600,Blvd. des Galeries, Bur 530
+                 Quebec,Quebec G2K 2H6</p>
                 <p><a href="mailto:contact@osf-global.com">contact@osf-global.com</a></p>
                 <p><a href="tel:+1(888)548-4344">+1(888)548-4344</a></p>
             </div>
@@ -90,7 +91,7 @@
             <p>All rights Reserved.</p>
         </div>
         <div class="dropmenufooter">
-            <a onclick="dropdownmenuContact()"><h5>CONTACT <span class="dropdown-toggle"></span></h5>
+            <a onclick="dropdownmenuContact()"><h5>CONTACT <span class="dropdown-toggle"></span></h5></a>
                 <ul id="dropmenufooterContact">
                     <li>Headquarters:</li>
                     <li>5600,Blvd. des Galeries, Bur 530</li>
@@ -118,7 +119,7 @@
                     <li><a href="error.html">Travel</a></li>
                     <li><a href="error.html">Women's Fashion</a></li>
                 </ul>
-            <a onclick="dropdownmenuAbout()"><h5>ABOUT <span class="dropdown-toggle"></span></h5>
+            <a onclick="dropdownmenuAbout()"><h5>ABOUT <span class="dropdown-toggle"></span></h5></a>
               <ul id="dropmenufooterAbout">
                     <li><a href="error.html">About us</a></li>
                     <li><a href="error.html">Delivery</a></li>
@@ -138,63 +139,6 @@
     </div>
 </footer>
 
-
-
-
-<script>
-    function showPopUp() {
-        var formContentPassword = $('#myPassword').val();
-        var upper = /[A-Z]/g;
-        var numeric = /[0-9]/g;
-        var special = /[!@#\$%\^&\*]/g;
-
-        if (formContentPassword == "") {
-            alert("Enter your password")
-        }
-        else if (formContentPassword.length < 6) {
-            alert("Your password should be at least 6 char length!")
-        }
-        else if (formContentPassword.match(numeric) < 1) {
-            alert("Your password should contain a numeric character")
-        }
-        else if (formContentPassword.match(upper) < 1) {
-            alert("Your password should contain an uppser case letter")
-        }
-        /*
-        else if(formContentPassword.match(special)<1){
-            alert("Your password should contain a special character")
-        }
-        */
-        else if (formContentPassword != "") {
-            alert("Signed in")
-        }
-        else {
-            alert("Something went wrong!")
-        }
-
-    }
-
-</script>
-
-
-<script>
-    function myFunction() {
-        let x = document.getElementById("myPassword");
-        let y = document.getElementById("openeye");
-        let z = document.getElementById("closeeye");
-
-        if (x.type === 'password') {
-            x.type = "text";
-            y.style.display = "block";
-            z.style.display = "none";
-        }
-        else {
-            x.type = "password";
-            y.style.display = "none";
-            z.style.display = "block";
-        }
-    }
-    </script>
 
     <script>
         let year = new Date();

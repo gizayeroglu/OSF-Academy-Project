@@ -40,7 +40,13 @@
                     </li>
                 </ul>
             <!--breadcrumb-->
-            <hr class="hr-text" data-content="Services" />
+           <div class="container-fluid hrContainer">
+               <div class="row">
+                   <div class="col-4 hrColumns"><hr class="serviceshr"></div>
+                <div class="col-4 menuServices">Services</div>
+                <div class="col-4 hrColumns"><hr class="serviceshr"></div>
+               </div>
+           </div>
             <a id="HideFilterMessage">
                 <p class="hidefilter d-md-none">Hide Filter</p>
             </a>
@@ -339,19 +345,27 @@
             <br><br>
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-0">
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
+                  
                     <div class="containerpop">
                         <h5>Featured Products</h5>
                         <h>Unde omnis iste natus error sit voluptatem</h>
-                        <hr class="hr-text" data-content="///" />
+                       <div class="container FeaturedProductsHr">
+                           <div class="row">
+                               <div class="col-1"><button><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                 </a></button></div>
+                                <div class="col-4 hrColumns"><hr class="serviceshr"></div>
+                                <div class="col-1 hrIndex">///</div>
+                                <div class="col-4 hrColumns"><hr class="serviceshr"></div>
+                                <div class="col-1"><button><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a></button></div>
+                           </div>
+                       </div>
                     </div>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                   
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">

@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12" id="#navContent">
-                <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top MAIN">
+                <nav class="navbar navbar-expand-md navbar-light bg-white MAIN">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
                         aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -26,13 +26,13 @@
                             <div class="centermenu">
                                 <li class="nav-item dropdown menu-area">
                                     <a class="nav-link dropdown-toggle ServicesSection" href="#" id="mega-one"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="openSmallScreen()">
                                         SERVICES
                                     </a>
                                     <div class="dropdown-menu mega-area" aria-labelledby="mega-one">
-                                        <div class="row">
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
-                                                <h5>PRODUCT CATEGORIES</h5>
+                                        <div class="container-fluid">
+                                            <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                                                <h5 id="ProductCategoriest">PRODUCT CATEGORIES</h5>
                                                 <a class="dropdown-item" href="error.html">Accessories</a>
                                                 <a class="dropdown-item" href="error.html">Alcohol</a>
                                                 <a class="dropdown-item" href="error.html">Art</a>
@@ -44,18 +44,17 @@
                                                 <a class="dropdown-item" href="error.html">Food</a>
 
                                             </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                                            <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 listedmegamenuItems">
                                                 <a class="dropdown-item" href="error.html">Gadgets</a>
                                                 <a class="dropdown-item" href="error.html">Garden</a>
                                                 <a class="dropdown-item" href="error.html">Grocery</a>
                                                 <a class="dropdown-item" href="error.html">Home</a>
                                                 <a class="dropdown-item" href="error.html">Jewelry</a>
                                                 <a class="dropdown-item" href="error.html">Kids&Baby</a>
-                                                <a class="dropdown-item" href="error.html">Men's
-                                                    Fashion</a>
+                                                <a class="dropdown-item" href="error.html">Men's Fashion</a>
                                                 <a class="dropdown-item" href="error.html">Mobile</a>
                                             </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                                            <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 listedmegamenuItems">
                                                 <a class="dropdown-item" href="error.html">Motorcycles</a>
                                                 <a class="dropdown-item" href="error.html">Movies</a>
                                                 <a class="dropdown-item" href="error.html">Music</a>
@@ -65,7 +64,7 @@
                                                 <a class="dropdown-item" href="error.html">Sport</a>
                                                 <a class="dropdown-item" href="error.html">Toys</a>
                                             </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                                            <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
                                                 <h5>SALE</h5>
                                                 <a class="dropdown-item" href="error.html">Accessories</a>
                                                 <a class="dropdown-item" href="error.html">Alcohol</a>
@@ -77,20 +76,65 @@
                                                     href="error.html">Flowers&Plants</a>
                                                 <a class="dropdown-item" href="error.html">Food</a>
                                             </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                            <div class="col-12 col-sm-12 col-md-3 col-lg-4 col-xl-3 ImageBoxDrop">
                                                 <a class="dropdown-item dropPhoto" href="#"><img src="../images/dropDownImg.jpg" alt="imageDropDown" ></a>
                                             </div>
                                         </div>
                                     </div>
+                                    <li>
+                                    <div class="optionMobile d-md-none" id="optionMobile">
+                                                <a onclick="dropdownmenuNavCategoriest()">
+                                                    Product Categoriest <span class="dropdown-toggle"></span></a>
+                                                    <ul id="dropmenuNavCategoriest">
+                                                        <li><a href="error.html">Accessories</a></li>
+                                                        <li><a href="error.html">Alcohol</a></li>
+                                                        <li><a href="error.html">Art</a></li>
+                                                        <li><a href="error.html">Books</a></li>
+                                                        <li><a href="error.html">Drink</a></li>
+                                                        <li><a href="error.html">Electronics</a></li>
+                                                        <li><a href="error.html">Flower&Plants</a></li>
+                                                        <li><a href="error.html">Foods</a></li>
+                                                        <li><a href="error.html">Gadgets</a></li>
+                                                        <li><a href="error.html">Garden</a></li>
+                                                        <li><a href="error.html">Grocery</a></li>
+                                                        <li><a href="error.html">Home</a></li>
+                                                        <li><a href="error.html">Jewellery</a></li>
+                                                        <li><a href="error.html">Kids&Baby</a></li>
+                                                        <li><a href="error.html">Men's Fashion</a></li>
+                                                        <li><a href="error.html">Mobile</a></li>
+                                                        <li><a href="error.html">Motorcycles</a></li>
+                                                        <li><a href="error.html">Movies</a></li>
+                                                        <li><a href="error.html">Music</a></li>
+                                                        <li><a href="error.html">Office</a></li>
+                                                        <li><a href="error.html">Pets</a></li>
+                                                        <li><a href="error.html">Romantic</a></li>
+                                                        <li><a href="error.html">Sport</a></li>
+                                                        <li><a href="error.html">Toys</a></li>
+                                                    </ul>
+                                                    <a onclick="dropdownmenuNavSale()">
+                                                    Sale <span class="dropdown-toggle"></span></a>
+                                                    <ul id="dropmenuNavSale">
+                                                        <li><a href="error.html">Accessories</a></li>
+                                                        <li><a href="error.html">Alcohol</a></li>
+                                                        <li><a href="error.html">Art</a></li>
+                                                        <li><a href="error.html">Books</a></li>
+                                                        <li><a href="error.html">Drink</a></li>
+                                                        <li><a href="error.html">Electronics</a></li>
+                                                        <li><a href="error.html">Flower&Plants</a></li>
+                                                        <li><a href="error.html">Foods</a></li>
+                                                    </ul>
+                                        
+                                        </div>
+                                    </li>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">COMPANY</a>
+                                    <a class="nav-link" href="#">COMPANY  <span class="dropdown-toggle d-md-none"></span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">LIBRARY</a>
+                                    <a class="nav-link" href="#">LIBRARY <span class="dropdown-toggle d-md-none"></span></a>
                                 </li>
-                                <li class="nav-item" style="min-width: 133px;">
-                                    <a class="nav-link" href="#">CONTACT US</a>
+                                <li class="nav-item" id="contactUS">
+                                    <a class="nav-link" href="#">CONTACT US <span class="dropdown-toggle d-md-none"></span></a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdownMenuLink"
@@ -165,13 +209,11 @@
             <div class="modal-content">
             <h3 class="signin">Sign in</h3>
                 <div class="modal-body">
-
                     <form>
                         <div class="form-group">
                             <label>Email</label>
                             <input type="email" required class="form-control1" id="myEmail">
                         </div>
-
                         <div class="form-group">
                             <label>Lato</label>
                             <p class="popupLinks float-right"><a href="#">forgot password</a></p>
@@ -183,6 +225,7 @@
                                 </span>
                             </div>
                         </div>
+                        <span id="passwordShould"></span>
                     </form>
                 </div>
                     <input type="button" class="login-btn " value="LOGIN" onclick="showPopUp()">
@@ -195,3 +238,94 @@
 </div>
 </div>
 <!--login screen-->
+
+<script>
+   function dropdownmenuNavCategoriest(){
+       let dropProductCategoriest=document.getElementById("dropmenuNavCategoriest");
+       if(dropProductCategoriest.style.display=="none"){
+           dropProductCategoriest.style.display="block";
+       }
+       else{
+           dropProductCategoriest.style.display="none";
+       }
+   }
+
+   function dropdownmenuNavSale(){
+       let dropProductCategoriest = document.getElementById("dropmenuNavSale");
+       if (dropProductCategoriest.style.display == "none") {
+           dropProductCategoriest.style.display = "block";
+       }
+       else {
+           dropProductCategoriest.style.display = "none";
+       }
+   }
+
+   function openSmallScreen(){
+       let tryme = document.getElementById("mega-one");
+       let dropdown=document.getElementById("optionMobile")
+       let lWidth = window.innerWidth;
+       console.log(lWidth);
+       if(lWidth<769){
+          if(dropdown.style.display=="none"){
+              dropdown.style.display="block";
+            }else{
+                dropdown.style.display="none";
+            }
+  
+        }else if(lWidth>769){
+         dropdown.style.display=="none";
+        }
+    }
+
+
+    
+
+        function showPopUp() {
+        const formContentPassword = $('#myPassword').val();
+        const upper = /[A-Z]/g;
+        const numeric = /[0-9]/g;
+        const special = /[!@#\$%\^&\*]/g;
+        const passwordSpan=document.getElementById("passwordShould");
+
+        if (formContentPassword == "") {
+            passwordSpan.innerHTML="Enter your Password!";
+            }
+        else if (formContentPassword.length < 6) {
+            passwordSpan.innerHTML="Your password should be at least 6 char length!";
+            }
+        else if (formContentPassword.match(numeric) < 1) {
+            passwordSpan.innerHTML="Your password should contain a numeric character";
+            }
+        else if (formContentPassword.match(special) < 1) {
+            passwordSpan.innerHTML = "Your password should contain a special character";
+        }
+        else if (formContentPassword.match(upper) < 1) {
+            passwordSpan.innerHTML="Your password should contain an uppser case letter"
+            }
+        else if (formContentPassword != "") {
+             passwordSpan.innerHTML="Signed in";
+            }
+        else {
+                alert("Something went wrong!")
+            }
+
+    }
+
+    function myFunction() {
+        let x = document.getElementById("myPassword");
+        let y = document.getElementById("openeye");
+        let z = document.getElementById("closeeye");
+
+        if (x.type === 'password') {
+        x.type = "text";
+            y.style.display = "block";
+            z.style.display = "none";
+        }
+        else {
+        x.type = "password";
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+    }
+
+</script>

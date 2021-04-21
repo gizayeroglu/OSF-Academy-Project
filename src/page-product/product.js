@@ -25,8 +25,12 @@ let readMore = document.getElementById("readMore");
 readMore.addEventListener("click", function () {
   let read = document.getElementById("showit");
 
-  if ((read.style.display = "none")) {
+  if (read.style.display == "none") {
     read.style.display = "inline";
+    readMore.innerHTML = "Read less";
+  } else {
+    read.style.display = "none";
+    readMore.innerHTML = "Read more";
   }
 });
 
