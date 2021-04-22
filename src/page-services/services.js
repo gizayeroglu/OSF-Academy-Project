@@ -5,7 +5,11 @@ require("./services.css");
 const hideFilter = document.getElementById("HideFilterMessage");
 hideFilter.addEventListener("click", function () {
   let filtersrow = document.getElementById("hideFilter");
-  if ((filtersrow.style.display = "block")) {
+  if (filtersrow.style.display == "") {
     filtersrow.style.display = "none";
+    hideFilter.innerHTML = "Show Filter";
+  } else {
+    hideFilter.innerHTML = "Hide Filter";
+    filtersrow.style.display = "";
   }
 });

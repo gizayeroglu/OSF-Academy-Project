@@ -85,7 +85,16 @@ body {
     margin-top: 50px;
   }
 }
-
+@media only screen and (max-width: 769px) {
+  .hr404 {
+    font-size: 25px !important;
+    margin: auto;
+    font-weight: 900;
+    color: #45413e;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+}
 .hr404tab .hrColumns {
   margin: auto;
 }

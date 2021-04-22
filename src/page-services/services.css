@@ -37,18 +37,18 @@
   font-weight: 500;
 }
 .servicesLandingImgBox .money {
-  color: #999999;
+  color: lightgray;
   font-weight: 600;
   font-size: 11pt;
 }
 .servicesloadMore-btn {
-  border-radius: 20px;
-  width: 150px;
-  height: 40px;
+  border-radius: 40px;
+  width: 200px;
+  height: 50px;
   color: white;
-  border: 1px solid #85bc23;
+  border: 3px solid #f0e3d8;
   background-color: #85bc23;
-  margin-top: 100px;
+  margin-top: 80px;
   outline: none;
 }
 
@@ -56,13 +56,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
 }
 .cont1 .btn {
-  width: 170px;
+  width: 200px;
   border: 3px solid #818078;
   border-radius: 20px;
   color: #818078;
   height: 40px;
+  text-align: center;
 }
 .rowfilter2 {
   margin-top: 30px;
@@ -76,10 +78,11 @@
   font-family: "Lato", sans-serif;
   margin-right: 15px;
   margin-top: 15px;
-  font-size: 10pt;
+  font-size: 11pt;
+  color: #262a33;
   font-weight: 600;
+  padding-right: 30px;
 }
-
 .color {
   margin-top: 20px;
 }
@@ -93,6 +96,9 @@
   border-radius: 10px;
   border: none;
   outline: none;
+}
+.colorbuttons li {
+  margin-right: 1px;
 }
 .btn-1 {
   background-color: white;
@@ -162,11 +168,6 @@
 .featured {
   background-color: #262a33;
 }
-.hrContainer .menuServices {
-  color: #45413e;
-  font-size: 55px;
-  font-weight: 1000;
-}
 .hrContainer .serviceshr {
   height: 2px;
   background-color: white;
@@ -178,7 +179,7 @@
   align-content: center;
   justify-content: center;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-top: 0;
 }
 .FeaturedProductsHr .serviceshr {
@@ -194,7 +195,8 @@
 }
 .FeaturedProductsHr button {
   width: 30px;
-  background-color: transparent;
+  background-color: #2d343a;
+  border: none;
   height: 30px;
 }
 .FeaturedProductsHr {
@@ -221,11 +223,29 @@
   color: white;
   font-size: 17pt;
 }
+@media only screen and (min-width: 769px) {
+  .hrContainer .menuServices {
+    color: #45413e;
+    font-size: 55px;
+    font-weight: 1000;
+  }
+}
 @media only screen and (max-width: 769px) {
   .servicesLandingImgBox {
     margin: auto;
     margin-top: 15px;
   }
+  /* services hr*/
+  .menuServices {
+    font-size: 20px;
+    text-align: center;
+    color: #45413e;
+    font-weight: 800;
+  }
+  .hrContainer .menuServices {
+    margin: auto;
+  }
+  /* services hr*/
 }
 
 .containerpop {
@@ -240,7 +260,7 @@
   font-size: 40px;
 }
 /* services hide filter */
-.hidefilter {
+#HideFilterMessage {
   cursor: pointer;
   color: #85bc23;
   font-weight: 600;

@@ -47,7 +47,7 @@
         <div class="container-fluid ProductTabhr">
             <div class="row">
                 <div class="col-2 hrColumns"><hr class="ArchideskHr"></div>
-                <div class="col-8 archiHrTab">Archi Desk Accessories Pen Cup</div>
+                <div class="col-8 archiHrTab"><p id="archi">Archi Desk Accessories Pen Cup</p><p class="d-md-none">Pen Cup</p></div>
                 <div class="col-2 hrColumns"><hr class="ArchideskHr"></div>
             </div>
         </div>
@@ -78,7 +78,8 @@
                         <div class="container">
                             <div class="row priceProduct">
                                 <div class="col-8">
-                                    <h5>$229.99</h5>
+                                    <br>
+                                    <h5 class="archiPrice">$229.99</h5>
                                 </div>
                             </div>
                             <div class="row">
@@ -271,8 +272,14 @@
         <!---Small screen popular items  slider-->
         <br>
         <div class="sliderPop ProductScreen d-md-none">
-            <hr class="hr-text textPopularItemsSlider" data-content="Popular Items" />
-            <div id="myCarousel3" class="carousel slide" data-ride="carousel3">
+            <div class="conitainer-fluid">
+                <div class="row">
+                    <div class="col-3"><hr></div>
+                    <div class="col-6 smallpophrtext">POPULAR ITEMS</div>
+                    <div class="col-3"><hr></div>
+                </div>
+            </div>
+            <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="imageboxPopular">
@@ -345,9 +352,9 @@
         <div class="container-fluid popitemProduct">
             <div class="container-fluid popularItemListTab">
                 <div class="row">
-                    <div class="col-5 hrColumns"><hr class="popularItemsListHr"></div>
-                    <div class="col-2 itemhr">POPULAR ITEMS</div>
-                    <div class="col-5 hrColumns"><hr class="popularItemsListHr"></div>
+                    <div class="col-4 hrColumns"><hr class="popularItemsListHr"></div>
+                    <div class="col-4 itemhr">POPULAR ITEMS</div>
+                    <div class="col-4 hrColumns"><hr class="popularItemsListHr"></div>
                 </div>
             </div>
             <div class="row ">
@@ -432,6 +439,8 @@
                     $("#breadcrumbs").breadcrumbsGenerator();
                 });
             </script>
+
+ 
      </body>
 
 </html>

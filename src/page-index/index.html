@@ -31,13 +31,13 @@
         <div class="cookieContiner">
             <button class="closeCookie"><i class="fal fa-times"></i></button>
             <h5>This website uses cookies</h5>
-               <p> OSF uses its own and third-party cookies for statistical purposes, to know your preferences,
+            <p> OSF uses its own and third-party cookies for statistical purposes, to know your preferences,
                 for website performance
                 and interaction with social media offering publicity tailored to your interests. If you continue
                 browsing,
                 we consider that you accept its use.
                 You can expand this information consulting our <a href="#">Cookies Policy Page</a>
-                </p><input type="button" class="acceptCookie" value="ACCEPT">
+            </p><input type="button" class="acceptCookie" value="ACCEPT">
         </div>
         <!---cookie policy-->
 
@@ -136,12 +136,26 @@
         <!---Small screen popular items  slider-->
         <br>
         <div class="sliderPop d-lg-none">
-            <hr class="hr-text textPopularItemsSlider" data-content="Popular Items" />
-            <div id="myCarousel2" class="carousel slide" data-ride="carousel2">
+            <div class="container-fluid smallPopItemSlide">
+                <div class="row">
+                    <div class="col-3">
+                        <hr class="smallPopItemhrcol">
+                    </div>
+                    <div class="col-6">
+                        <p class="smallPopItemHr">Popular Items</p>
+                    </div>
+                    <div class="col-3">
+                        <hr class="smallPopItemhrcol">
+                    </div>
+                </div>
+            </div>
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel2" data-slide-to="1"></li>
                     <li data-target="#myCarousel2" data-slide-to="2"></li>
+                    <li data-target="#myCarousel2" data-slide-to="3"></li>
+                    <li data-target="#myCarousel2" data-slide-to="4"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -221,7 +235,19 @@
         <div class="container-fluid popularitems">
             <br><br>
             <div class="containerpop">
-                <hr class="hr-text" data-content="Popular Items" />
+                <div class="container-fluid IndexPagePopItemHr">
+                    <div class="row">
+                        <div class="col-5">
+                            <hr class="popularItemHr">
+                        </div>
+                        <div class="col-2">
+                            <p class="popularItemHrTag">Popular Items</p>
+                        </div>
+                        <div class="col-5 ">
+                            <hr class="popularItemHr">
+                        </div>
+                    </div>
+                </div>
             </div>
             <br>
             <div class="container">
@@ -235,13 +261,8 @@
                             <div class="middle">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <button id="addToChart" onclick="buyNow()"><i
-                                                    class="fas fa-plus"></i></button>
-                                        </div>
-                                        <div class="col-6">
-                                            <button id="addToFav" onclick="favNow()"><i
-                                                    class="fas fa-heart"></i></button>
+                                        <div class="col-6"><button id="addToChart" onclick="buyNow()"><i class="fas fa-plus"></i></button></div>
+                                        <div class="col-6"><button id="addToFav" onclick="favNow()"><i class="fas fa-heart"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -250,10 +271,9 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                         <div class="popitem">
-                            <a href="product.html">
-                                <img src="<%= require('../images/popitem2.png') %>">
-                                <p class="PopItemName">Hay-About A Lounge Chair AAL 93</p>
-                            </a>
+                            <a href="product.html"><img src="<%= require('../images/popitem2.png') %>"></a>
+                            <a href="product.html"> <p class="PopItemName">Hay-About A Lounge Chair AAL 93</p></a>
+                           
                             <div class="BuynowDiv">
                                 <div class="container">
                                     <div class="row">
@@ -274,14 +294,8 @@
                             <div class="middle">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <button id="addToChart" onclick="buyNow()"><i
-                                                    class="fas fa-plus"></i></button>
-                                        </div>
-                                        <div class="col-6">
-                                            <button id="addToFav" onclick="favNow()"><i
-                                                    class="fas fa-heart"></i></button>
-                                        </div>
+                                        <div class="col-6"><button id="addToChart" onclick="buyNow()"><i class="fas fa-plus"></i></button></div>
+                                        <div class="col-6"><button id="addToFav" onclick="favNow()"><i class="fas fa-heart"></i></button> </div>
                                     </div>
                                 </div>
                             </div>
@@ -289,41 +303,59 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                         <div class="popitem">
-                            <a href="product.html">
-                                <img src="<%= require('../images/popitem4.png') %>">
-                                <p class="PopItemName">Cocktail Table Walnut | YES</p>
-                                <p class="popularItemsAwesome">Awesome</p>
-                            </a>
+                            <a href="product.html"> <img src="<%= require('../images/popitem4.png') %>"></a>
+                            <a href="product.html"> <p class="PopItemName">Cocktail Table Walnut | YES</p></a>
+                            <a href="product.html">  <p class="popularItemsAwesome">Awesome</p></a> 
                         </div>
                     </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                        <div class="popitem">
-                            <a href="product.html">
-                                <img src="<%= require('../images/popitem5.png') %>">
-                                <p class="PopItemName">Hay-About A Lounge Chair AAL 93</p>
-                                <p class="PopItemsPrice">$ 659.55</p>
-                            </a>
+                        <div class="popitem hoverOverlay">
+                            <img src="<%= require('../images/popitem5.png') %>">
+                            <p class="PopItemName">Hay-About A Lounge Chair AAL 93</p>
+                            <p class="PopItemsPrice">$ 659.55</p>
+                            <div class="middle">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6"><button id="addToChart" onclick="buyNow()"><i class="fas fa-plus"></i></button></div>
+                                        <div class="col-6"><button id="addToFav" onclick="favNow()"><i class="fas fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                        <div class="popitem">
-                            <a href="product.html">
-                                <img src="<%= require('../images/popitem6.png') %>">
-                                <p class="PopItemName">TORY DESK CALENDAR</p>
-                                <p class="PopItemsPrice">$ 410.99</p>
-                            </a>
+                        <div class="popitem hoverOverlay">
+                            <img src="<%= require('../images/popitem6.png') %>">
+                            <p class="PopItemName">TORY DESK CALENDAR</p>
+                            <p class="PopItemsPrice">$ 410.99</p>
+                            <div class="middle">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6"><button id="addToChart" onclick="buyNow()"><i class="fas fa-plus"></i></button></div>
+                                        <div class="col-6"><button id="addToFav" onclick="favNow()"><i class="fas fa-heart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                        <div class="popitem">
-                            <a href="product.html">
-                                <img src="<%= require('../images/popitem7.png') %>">
-                                <p class="PopItemName">CH445 Wing Chair on SUİTE NY</p>
-                                <p class="PopItemsPrice">$ 330.55</p>
-                            </a>
+                        <div class="popitem hoverOverlay">
+                            <img src="<%= require('../images/popitem7.png') %>">
+                            <p class="PopItemName">CH445 Wing Chair on SUİTE NY</p>
+                            <p class="PopItemsPrice">$ 330.55</p>
+                            <div class="middle">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6"><button id="addToChart" onclick="buyNow()"><i class="fas fa-plus"></i></button></div>
+                                        <div class="col-6"> <button id="addToFav" onclick="favNow()"><i class="fas fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
@@ -363,19 +395,33 @@
             <br><br>
             <div class="row">
                 <div class="col-12">
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
                     <div class="containerpop">
                         <h5>Featured Products</h5>
                         <h>Unde omnis iste natus error sit voluptatem</h>
-                        <hr class="hr-text" data-content="///" />
+                        <div class="container-fluid IndexPageFeaturedProductsHr">
+                            <div class="row">
+                                <div class="col-1"><button><a class="carousel-control-prev"
+                                            href="#carouselExampleControls" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a></button></div>
+                                <div class="col-4">
+                                    <hr class="hrColumnsFeatured">
+                                </div>
+                                <div class="col-1">
+                                    <p class="hrIndexFeatured"> /// </p>
+                                </div>
+                                <div class="col-4">
+                                    <hr class="hrColumnsFeatured">
+                                </div>
+                                <div class="col-1 "><button><a class="carousel-control-next"
+                                            href="#carouselExampleControls" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a></button></div>
+                            </div>
+                        </div>
                     </div>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">

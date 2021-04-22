@@ -17,13 +17,20 @@ button.addEventListener("click", function () {
       productsHtml =
         productsHtml +
         `<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-          <div class="popitem">
-          <a href="product.html">
+          <div class="popitem hoverOverlay">
             <img src="${product.ImgSource}">
             <p class="PopItemName">${product.ProductName}</p>
             <p class="PopItemsPrice">${product.Price}</p>
-            </a>
-            </div>
+            <div class="middle">
+                <div class="container">
+                      <div class="row">
+                          <div class="col-6">
+                                <button id="addToChart" onclick="buyNow()"><i class="fas fa-plus"></i></button></div>
+                           <div class="col-6"><button id="addToFav" onclick="favNow()"><i class="fas fa-heart"></i></button></div>
+                           </div>
+                        </div>
+                    </div>
+              </div>
             </div>`;
     }
 

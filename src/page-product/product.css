@@ -144,9 +144,14 @@ body {
   .priceProduct {
     justify-content: center;
   }
+
   .input-group {
     margin: auto;
     margin-bottom: 15px;
+  }
+  .popularItemListTab .itemhr {
+    font-size: 25px !important;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 769px) {
@@ -180,7 +185,6 @@ body {
   }
   .priceProduct h5 {
     font-size: 20pt;
-    margin-top: 10px;
   }
   .hr-text {
     font-size: 15pt !important;
@@ -201,6 +205,16 @@ body {
   }
   .smallscreenImageButtonsDiv {
     text-align: center;
+  }
+  #archi {
+    display: none;
+  }
+  .smallpophrtext {
+    color: #45413e;
+    font-family: "Lato", sans-serif;
+    font-size: 15pt !important;
+    text-align: center;
+    font-weight: 800;
   }
 }
 .notvisible {
@@ -307,9 +321,13 @@ body {
   background-color: #f1edea;
 }
 .popitemlist .price {
-  color: #999999;
+  color: lightgray;
   font-family: "Lato", sans-serif;
   font-weight: 600;
+  font-size: 12pt;
+  bottom: 5px;
+  position: absolute;
+  margin-left: 110px;
 }
 .popitemtext {
   font-size: 22pt;
@@ -317,6 +335,13 @@ body {
 /* pop item list */
 
 /* small screen popular item slide */
+.smallpophrtext {
+  color: #45413e;
+  font-family: "Lato", sans-serif;
+  font-size: 18pt;
+  text-align: center;
+  font-weight: 800;
+}
 .sliderPop {
   padding-top: 25px;
   background-color: #262a33;
@@ -364,7 +389,7 @@ body {
 }
 .imageboxPopular .money {
   font-weight: 600;
-  color: #999999;
+  color: lightgray;
   padding-bottom: 25px;
 }
 .imageboxPopular img {
@@ -385,13 +410,16 @@ body {
   .DescriptionProductTabs {
     display: none;
   }
+  .archiHrTab {
+    font-size: 30px !important;
+  }
 }
 /* hr */
 .ArchideskHr {
   height: 2px;
 }
 .archiHrTab {
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 700;
   color: #45413e;
   text-align: center;
@@ -413,8 +441,19 @@ body {
   font-size: 27px;
   font-weight: 800;
   font-family: "Lato", sans-serif;
+  text-align: center;
 }
 .popularItemListTab {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 /* hr */
+
+@media only screen and (min-width: 1200px) {
+  .priceProduct h5 {
+    font-size: 45pt;
+  }
+}
+.priceProduct h5 {
+  margin-top: 10px;
+  color: #45413e;
+}

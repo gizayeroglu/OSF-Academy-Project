@@ -353,6 +353,10 @@ li {
 .mega-area a {
   color: white;
 }
+.mega-area a:active {
+  background-color: white;
+  color: black;
+}
 .centermenu .mega-area {
   margin-top: -1px;
   padding-left: 20px;
@@ -376,7 +380,6 @@ li {
   color: #c8d6e5 !important;
   border-bottom: 5px solid #85bc23;
 }
-
 /*login popup*/
 #passwordShould {
   font-family: "Lato", sans-serif;
