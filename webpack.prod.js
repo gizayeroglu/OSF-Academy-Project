@@ -48,7 +48,7 @@ module.exports = {
           {
             loader: "url-loader",
             options: {
-              name: "[name].[hash:20].[ext]",
+              name: "[name].[ext]",
               esModule: false,
               limit: 8192,
             },

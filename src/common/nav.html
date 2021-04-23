@@ -83,7 +83,7 @@
                                     </div>
                                     <li>
                                     <div class="optionMobile d-md-none" id="optionMobile">
-                                                <a onclick="dropdownmenuNavCategoriest()">
+                                                <a id="dropdownmenuNavCategoriest">
                                                     Product Categoriest <span class="dropdown-toggle"></span></a>
                                                     <ul id="dropmenuNavCategoriest">
                                                         <li><a href="error.html">Accessories</a></li>
@@ -111,7 +111,7 @@
                                                         <li><a href="error.html">Sport</a></li>
                                                         <li><a href="error.html">Toys</a></li>
                                                     </ul>
-                                                    <a onclick="dropdownmenuNavSale()">
+                                                    <a id="dropdownmenuNavSale">
                                                     Sale <span class="dropdown-toggle"></span></a>
                                                     <ul id="dropmenuNavSale">
                                                         <li><a href="error.html">Accessories</a></li>
@@ -136,13 +136,13 @@
                                 <li class="nav-item" id="contactUS">
                                     <a class="nav-link" href="#">CONTACT US <span class="dropdown-toggle d-md-none"></span></a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown" id="EN">
                                     <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdownMenuLink"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         EN
                                     </a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown" id="US">
                                     <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdownMenuLink"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         $ US
@@ -152,7 +152,7 @@
                             <div class="rightmenu">
                                 <ul class="iconsmenu">
                                     <li class="nav-item withoutIcon">
-                                        <a href="#"><i class="fal fa-search"></i></a>
+                                        <a href="#"><i class="far fa-search searchIcon"></i></a>
                                     </li>
                                     <li class="nav-item userwanstlogin withoutIcon">
                                         <a href="#"><i class="fal fa-user userwanstlogin" data-target="#myModal"
@@ -182,7 +182,7 @@
 <div class="container-fluid bg-dark sticky-bottom bottomMenu1">
     <div class="row">
         <div class="col-3">
-            <a href="#" class="nav-link"><i class="far fa-search"></i></a>
+            <a href="#" class="nav-link"><i class="far fa-search searchIcon"></i></a>
         </div>
         <div class="col-3">
             <a href="#" class="nav-link"><i class="far fa-user" data-target="#myModal" data-toggle="modal"></i></a>
@@ -219,7 +219,7 @@
                             <p class="popupLinks float-right"><a href="#">forgot password</a></p>
                             <div class="lato">
                                 <input type="password" id="myPassword" class="form-control2">
-                                <span class="eye" onclick="myFunction()">
+                                <span class="eye" id="myFunction">
                                     <i id="openeye" class="fal fa-eye"></i>
                                     <i id="closeeye" class="fal fa-eye-slash"></i>
                                 </span>
@@ -228,7 +228,7 @@
                         <span id="passwordShould"></span>
                     </form>
                 </div>
-                    <input type="button" class="login-btn " value="LOGIN" onclick="showPopUp()">
+                    <input type="button" class="login-btn " value="LOGIN" id="showPopUp">
                 <div class="form-group">
                     <p class="popupLinks text-center"><a href="#">I don't have an accont</a></p>
                 </div>
@@ -240,33 +240,37 @@
 <!--login screen-->
 
 <script>
-   function dropdownmenuNavCategoriest(){
-       let dropProductCategoriest=document.getElementById("dropmenuNavCategoriest");
-       if(dropProductCategoriest.style.display=="none"){
-           dropProductCategoriest.style.display="block";
-       }
-       else{
-           dropProductCategoriest.style.display="none";
-       }
-   }
-
-   function dropdownmenuNavSale(){
-       let dropProductCategoriest = document.getElementById("dropmenuNavSale");
-       if (dropProductCategoriest.style.display == "none") {
-           dropProductCategoriest.style.display = "block";
+     /* small screen navbar category section dropdown */
+    const dropmenuCategory=document.getElementById("dropdownmenuNavCategoriest");
+    dropmenuCategory.addEventListener('click',function(){
+           let dropProductCategoriest = document.getElementById("dropmenuNavCategoriest");
+        if (dropProductCategoriest.style.display == "none" || !dropProductCategoriest.style.display) {
+            dropProductCategoriest.style.display = "block";
+        }
+        else {
+            dropProductCategoriest.style.display = "none";
+        }
+    })
+   /* small screen navbar sale section dropdown */
+   const dropSale=document.getElementById("dropdownmenuNavSale");
+   dropSale.addEventListener('click',function(){
+       let dropProductSale = document.getElementById("dropmenuNavSale");
+       if (dropProductSale.style.display == "none" || !dropProductSale.style.display) {
+           dropProductSale.style.display = "block";
        }
        else {
-           dropProductCategoriest.style.display = "none";
+           dropProductSale.style.display = "none";
        }
-   }
-
+   })
+   
+   /* small screen navbar dropdown */
    function openSmallScreen(){
        let tryme = document.getElementById("mega-one");
        let dropdown=document.getElementById("optionMobile")
        let lWidth = window.innerWidth;
        console.log(lWidth);
        if(lWidth<769){
-          if(dropdown.style.display=="none"){
+          if(dropdown.style.display=="none" || !dropdown.style.display){
               dropdown.style.display="block";
             }else{
                 dropdown.style.display="none";
@@ -276,56 +280,57 @@
          dropdown.style.display=="none";
         }
     }
+     /* login popup password validation */
+     const popup=document.getElementById("showPopUp");
+     popup.addEventListener('click',function(){
+         const formContentPassword = $('#myPassword').val();
+         const upper = /[A-Z]/g;
+         const numeric = /[0-9]/g;
+         const special = /[!@#\$%\^&\*]/g;
+         const passwordSpan = document.getElementById("passwordShould");
 
 
-    
+         if (formContentPassword == "") {
+             passwordSpan.innerHTML = "Enter your Password!";
+         }
+         else if (formContentPassword.length < 6) {
+             passwordSpan.innerHTML = "Your password should be at least 6 char length!";
+         }
+         else if (formContentPassword.match(numeric) < 1) {
+             passwordSpan.innerHTML = "Your password should contain a numeric character";
+         }
+         else if (formContentPassword.match(special) < 1) {
+             passwordSpan.innerHTML = "Your password should contain a special character";
+         }
+         else if (formContentPassword.match(upper) < 1) {
+             passwordSpan.innerHTML = "Your password should contain an uppser case letter"
+         }
+         else if (formContentPassword != "") {
+             passwordSpan.innerHTML = "Signed in";
+             $('#myModal').modal('hide');
+         }
+         else {
+             alert("Something went wrong!")
+         }
 
-        function showPopUp() {
-        const formContentPassword = $('#myPassword').val();
-        const upper = /[A-Z]/g;
-        const numeric = /[0-9]/g;
-        const special = /[!@#\$%\^&\*]/g;
-        const passwordSpan=document.getElementById("passwordShould");
+     })
+    /* login popup eye functionality */
+     const eyefunc=document.getElementById("myFunction");
+     eyefunc.addEventListener('click',function(){
+         let x = document.getElementById("myPassword");
+         let y = document.getElementById("openeye");
+         let z = document.getElementById("closeeye");
 
-        if (formContentPassword == "") {
-            passwordSpan.innerHTML="Enter your Password!";
-            }
-        else if (formContentPassword.length < 6) {
-            passwordSpan.innerHTML="Your password should be at least 6 char length!";
-            }
-        else if (formContentPassword.match(numeric) < 1) {
-            passwordSpan.innerHTML="Your password should contain a numeric character";
-            }
-        else if (formContentPassword.match(special) < 1) {
-            passwordSpan.innerHTML = "Your password should contain a special character";
-        }
-        else if (formContentPassword.match(upper) < 1) {
-            passwordSpan.innerHTML="Your password should contain an uppser case letter"
-            }
-        else if (formContentPassword != "") {
-             passwordSpan.innerHTML="Signed in";
-            }
-        else {
-                alert("Something went wrong!")
-            }
-
-    }
-
-    function myFunction() {
-        let x = document.getElementById("myPassword");
-        let y = document.getElementById("openeye");
-        let z = document.getElementById("closeeye");
-
-        if (x.type === 'password') {
-        x.type = "text";
-            y.style.display = "block";
-            z.style.display = "none";
-        }
-        else {
-        x.type = "password";
-            y.style.display = "none";
-            z.style.display = "block";
-        }
-    }
+         if (x.type === 'password') {
+             x.type = "text";
+             y.style.display = "block";
+             z.style.display = "none";
+         }
+         else {
+             x.type = "password";
+             y.style.display = "none";
+             z.style.display = "block";
+         }
+     })
 
 </script>

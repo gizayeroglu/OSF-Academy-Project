@@ -1,7 +1,7 @@
 <!--big footer-->
 <footer>
-    <div class="container-fluid bigfooter" id="footerContainer" style="background-color: white;">
-        <div class="row justify-content-center" id="footerDiv">
+    <div class="container-fluid bigfooter" id="footerContainer">
+        <div class="row" id="footerDiv">
             <div class="col-lg-2 footerLine contact">
                 &copy; Copyright <span id="year"></span>
                 <p>All rights Reserved</p>
@@ -69,7 +69,7 @@
             </div>
 
 
-            <div class="col-lg-2 footerLine">
+            <div class="col-lg-1 footerLine">
                 <ul class="footericons">
                     <li><a href="https://tr-tr.facebook.com/"><i class="fab fa-facebook-f"></i></li></a>
                     <li><a href="https://www.google.com/account/about/"><i class="fab fa-google-plus-g"></i></li></a>
@@ -91,7 +91,7 @@
             <p>All rights Reserved.</p>
         </div>
         <div class="dropmenufooter">
-            <a onclick="dropdownmenuContact()"><h5>CONTACT <span class="dropdown-toggle"></span></h5></a>
+            <a id="dropdownmenuContact"><h5>CONTACT <span class="dropdown-toggle"></span></h5></a>
                 <ul id="dropmenufooterContact">
                     <li>Headquarters:</li>
                     <li>5600,Blvd. des Galeries, Bur 530</li>
@@ -99,7 +99,7 @@
                     <li><p><a href="mailto:contact@osf-global.com">contact@osf-global.com</a></p></li>
                     <li><p><a href="tel:+1(888)548-4344">+1(888)548-4344</a></p></li>
                 </ul>
-            <a onclick="dropdownmenuCategoriest()"><h5>CATEGORIEST <span class="dropdown-toggle"></span></h5>
+            <a id="dropdownmenuCategoriest"><h5>CATEGORIEST <span class="dropdown-toggle"></span></h5>
                 <ul id="dropmenufooterCategoriest">
                     <li><a href="error.html">Alcohol</a></li>
                     <li><a href="error.html">Art</a></li>
@@ -119,7 +119,7 @@
                     <li><a href="error.html">Travel</a></li>
                     <li><a href="error.html">Women's Fashion</a></li>
                 </ul>
-            <a onclick="dropdownmenuAbout()"><h5>ABOUT <span class="dropdown-toggle"></span></h5></a>
+            <a id="dropMenuAbout"><h5>ABOUT <span class="dropdown-toggle"></span></h5></a>
               <ul id="dropmenufooterAbout">
                     <li><a href="error.html">About us</a></li>
                     <li><a href="error.html">Delivery</a></li>
@@ -138,45 +138,47 @@
     </div>
     </div>
 </footer>
-
-
-    <script>
-        let year = new Date();
-        let currentYear=document.getElementById("year").innerHTML;
-        let smallDeviceYear=document.getElementById("smallDeviceYear").innerHTML;
-        currentYear=year.getFullYear();
-        document.getElementById("year").innerHTML=currentYear;
-        document.getElementById("smallDeviceYear").innerHTML = currentYear;
-    </script>
-
-
 <script>
-    function dropdownmenuAbout(){
-       let showAbout= document.getElementById("dropmenufooterAbout")
-       if(showAbout.style.display=="none"){
-           showAbout.style.display="block";
-       }else{
-           showAbout.style.display="none";
-       }
+    /*Copyright year getFullYear functionality */
+    let year = new Date();
+    let currentYear = document.getElementById("year").innerHTML;
+    let smallDeviceYear = document.getElementById("smallDeviceYear").innerHTML;
+    currentYear = year.getFullYear();
+    document.getElementById("year").innerHTML = currentYear;
+    document.getElementById("smallDeviceYear").innerHTML = currentYear;
 
-    }
+    /* small screen footer about dropdown */
+    const dropmenuAbout=document.getElementById("dropMenuAbout");
+    dropmenuAbout.addEventListener('click',function(){
+        let showAbout = document.getElementById("dropmenufooterAbout")
+        
+        if (showAbout.style.display === "none" || !showAbout.style.display) {
+            showAbout.style.display = "block";
+        } else {
+            showAbout.style.display = "none";
+        }
+    })
 
-    function dropdownmenuCategoriest() {
-      let showCategoriest=document.getElementById("dropmenufooterCategoriest");
-      if(showCategoriest.style.display=="none"){
-          showCategoriest.style.display="block";
-      }else{
-          showCategoriest.style.display="none";
-      }
-    }
-
-    function dropdownmenuContact() {
+    /* small screen footer categoriest dropdown */
+    const dropmenuCategoriest=document.getElementById("dropdownmenuCategoriest");
+    dropmenuCategoriest.addEventListener('click',function(){
+        let showCategoriest = document.getElementById("dropmenufooterCategoriest");
+        if (showCategoriest.style.display === "none" || !showCategoriest.style.display) {
+            showCategoriest.style.display = "block";
+        } else {
+            showCategoriest.style.display = "none";
+        }
+    })
+    /* small screen footer contact dropdown */
+    const dropmenuContact=document.getElementById("dropdownmenuContact");
+    dropmenuContact.addEventListener('click',function(){
         let showContact = document.getElementById("dropmenufooterContact");
-        if (showContact.style.display == "none") {
+        if (showContact.style.display === "none" || !showContact.style.display) {
             showContact.style.display = "block";
         }
-        else{
-            showContact.style.display="none";
+        else {
+            showContact.style.display = "none";
         }
-    }
+    })
+    
 </script>

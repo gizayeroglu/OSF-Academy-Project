@@ -4,7 +4,7 @@ a {
 .hrIndex {
   margin-bottom: 0;
   height: 1px;
-  background-color: #f0e3d8;
+  background-color: #f3f0e6;
   margin-top: 0;
 }
 /* carousel*/
@@ -425,10 +425,10 @@ a {
   opacity: 0.2;
 }
 .hoverOverlay:hover {
-  background-color: #85bc23;
+  background-color: #23c570;
 }
 .fa-plus {
-  color: #85bc23;
+  color: #23c570;
   font-size: 25px;
 }
 .hoverOverlay .fa-heart {
@@ -441,7 +441,7 @@ a {
   opacity: 0.2;
 }
 .staticOne {
-  background: linear-gradient(rgba(199, 21, 133, 0.8), rgba(5, 5, 177, 0.4));
+  background: linear-gradient(rgba(243, 70, 137, 0.9), rgba(81, 58, 155, 0.8));
 }
 .middleStatic {
   opacity: 1;
@@ -484,7 +484,7 @@ a {
   border-bottom: none;
 }
 .priceButton {
-  color: #85bc23;
+  color: #23c570;
   font-weight: 600;
   border: none;
 }

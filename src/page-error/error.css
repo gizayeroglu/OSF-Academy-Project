@@ -4,8 +4,8 @@ body {
 }
 .hrError {
   margin-bottom: 0;
-  height: 1px;
-  background-color: #f0e3d8;
+  height: 4px;
+  background-color: #efe8e2;
   margin-top: 0;
 }
 .error {
