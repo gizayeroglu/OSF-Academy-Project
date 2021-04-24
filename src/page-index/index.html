@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>OSF Global</title>
     <meta charset="UTF-8">
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <%= require('html-loader!../common/nav.html') %>
         <hr class="hrIndex">
@@ -97,16 +104,25 @@
                 <!--summersale section-->
 
                 <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class=" summersales">
-                        <img src="<%= require('../images/55.png') %>">
+                    <div class="summersales">
+                    <div class="saleImage">
+                    <div class="imageContainer">
+                        <img src="<%= require('../images/55.png') %>" id="summerSaleImg">
+                        <div class="ss55">
+                            <h5>55%</h5>
+                            <p id="summersalep">SUMMER SALES</p>
+                        </div>
+                    </div>
+                    </div>
                         <h2>Follow us on Facebook</h2>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit</p>
                         <div class="followbutton">
-                            <i class="fab fa-facebook-f"><a href="https://tr-tr.facebook.com/"></i><input type="button"
-                                class="facebook-btn" value="FOLLOW"></a>
+                            <i class="fab fa-facebook-f"><a href="https://tr-tr.facebook.com/"></i><input type="button" class="facebook-btn"
+                                value="FOLLOW"></a>
                         </div>
                     </div>
                 </div>
+
             </div>
             <!--summersale section-->
         </div>
@@ -176,7 +192,7 @@
                     <div class="carousel-item">
                         <div class="imageboxPopular">
                             <a href="product.html">
-                                <img src="<%= require('../images/popitem6.png') %>images/popitem6.png">
+                                <img src="<%= require('../images/popitem6.png') %>">
                                 <p class="PopItemName">CH45 Wing Chair on SUITE NY</p>
                                 <p class="money">$330.55</p>
                             </a>
@@ -228,8 +244,10 @@
                             <div class="middle">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-6"><button class="addToChart"><i class="fas fa-plus"></i></button></div>
-                                        <div class="col-6"><button class="addToFav"><i class="fas fa-heart"></i></button>
+                                        <div class="col-6"><button class="addToChart"><i
+                                                    class="fas fa-plus"></i></button></div>
+                                        <div class="col-6"><button class="addToFav"><i
+                                                    class="fas fa-heart"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -239,8 +257,10 @@
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                         <div class="popitem">
                             <a href="product.html"><img src="<%= require('../images/popitem2.png') %>"></a>
-                            <a href="product.html"> <p class="PopItemName">Hay-About A Lounge Chair AAL 93</p></a>
-                           
+                            <a href="product.html">
+                                <p class="PopItemName">Hay-About A Lounge Chair AAL 93</p>
+                            </a>
+
                             <div class="BuynowDiv">
                                 <div class="container">
                                     <div class="row">
@@ -261,8 +281,10 @@
                             <div class="middle">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-6"><button class="addToChart"><i class="fas fa-plus"></i></button></div>
-                                        <div class="col-6"><button class="addToFav"><i class="fas fa-heart"></i></button> </div>
+                                        <div class="col-6"><button class="addToChart"><i
+                                                    class="fas fa-plus"></i></button></div>
+                                        <div class="col-6"><button class="addToFav"><i
+                                                    class="fas fa-heart"></i></button> </div>
                                     </div>
                                 </div>
                             </div>
@@ -271,8 +293,12 @@
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                         <div class="popitem">
                             <a href="product.html"> <img src="<%= require('../images/popitem4.png') %>"></a>
-                            <a href="product.html"> <p class="PopItemName">Cocktail Table Walnut | YES</p></a>
-                            <a href="product.html">  <p class="popularItemsAwesome">Awesome</p></a> 
+                            <a href="product.html">
+                                <p class="PopItemName">Cocktail Table Walnut | YES</p>
+                            </a>
+                            <a href="product.html">
+                                <p class="popularItemsAwesome">Awesome</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -286,8 +312,10 @@
                             <div class="middle">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-6"><button class="addToChart"><i class="fas fa-plus"></i></button></div>
-                                        <div class="col-6"><button class="addToFav"><i class="fas fa-heart"></i></button>
+                                        <div class="col-6"><button class="addToChart"><i
+                                                    class="fas fa-plus"></i></button></div>
+                                        <div class="col-6"><button class="addToFav"><i
+                                                    class="fas fa-heart"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -302,8 +330,10 @@
                             <div class="middle">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-6"><button class="addToChart"><i class="fas fa-plus"></i></button></div>
-                                        <div class="col-6"><button class="addToFav"><i class="fas fa-heart"></i></button></div>
+                                        <div class="col-6"><button class="addToChart"><i
+                                                    class="fas fa-plus"></i></button></div>
+                                        <div class="col-6"><button class="addToFav"><i
+                                                    class="fas fa-heart"></i></button></div>
                                     </div>
                                 </div>
                             </div>
@@ -317,8 +347,10 @@
                             <div class="middle">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-6"><button class="addToChart"><i class="fas fa-plus"></i></button></div>
-                                        <div class="col-6"> <button class="addToFav"><i class="fas fa-heart"></i></button>
+                                        <div class="col-6"><button class="addToChart"><i
+                                                    class="fas fa-plus"></i></button></div>
+                                        <div class="col-6"> <button class="addToFav"><i
+                                                    class="fas fa-heart"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -337,10 +369,11 @@
                     </div>
                 </div>
                 <div class="row" id="loadmorerow">
-                    
+
                 </div>
             </div>
-            <div class="loadmore"><a><input type="button" class="loadmore-btn" id="loadMore" value="LOAD MORE"><i class="fas fa-sync"></i></a></div>
+            <div class="loadmore"><a><input type="button" class="loadmore-btn" id="loadMore" value="LOAD MORE"><i
+                        class="fas fa-sync"></i></a></div>
             <br><br>
         </div>
         <!--Popular items-->
@@ -364,21 +397,23 @@
                         <h>Unde omnis iste natus error sit voluptatem</h>
                         <div class="container-fluid IndexPageFeaturedProductsHr">
                             <div class="row">
-                                <div class="col-1"><button><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span> </a></button></div>
-                                <div class="col-4">
+                                <div class="col-1"><button><a class="carousel-control-prev"
+                                            href="#carouselExampleControls" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span> </a></button></div>
+                                <div class="col-4 hrcolumns">
                                     <hr class="hrColumnsFeatured">
                                 </div>
                                 <div class="col-1">
                                     <p class="hrIndexFeatured"> /// </p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4 hrcolumns">
                                     <hr class="hrColumnsFeatured">
                                 </div>
-                                <div class="col-1 "><button><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span></a></button></div>
+                                <div class="col-1 "><button><a class="carousel-control-next"
+                                            href="#carouselExampleControls" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span></a></button></div>
                             </div>
                         </div>
                     </div>
@@ -519,4 +554,5 @@
         <%= require('html-loader!../common/footer.html') %>
 
 </body>
+
 </html>

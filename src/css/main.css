@@ -42,6 +42,9 @@ li {
 /*maintop */
 
 /*footer*/
+.contactBigFooter {
+  margin-top: 40px;
+}
 #footerContainer {
   background-color: white;
 }
@@ -80,10 +83,25 @@ li {
 }
 .footericons {
   display: inline-flex;
+  margin-right: 30px;
+  font-size: 30px;
+}
+.smallFooterIcons {
+  display: inline-flex;
+  margin-bottom: 40px;
+}
+.smallFooterIcons .fab {
+  display: inline-flex;
+  color: #b2b2b2;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  margin: auto;
 }
 .footericons .fab {
   color: #b2b2b2;
   margin: 10px;
+  font-size: 16px;
 }
 .footerlistitem {
   margin-top: 5px;
@@ -197,7 +215,7 @@ li {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   /*medium*/
   .menu-area:hover > .dropdown-menu {
     /* hover oldugunda display */
@@ -272,7 +290,6 @@ li {
     height: 100px;
     margin-right: 10px;
   }
-
   .centermenu {
     height: 150px;
     width: 100%;
@@ -280,13 +297,9 @@ li {
     display: flex;
     justify-content: center;
   }
-
   .bottomMenu1 {
     bottom: 0;
     position: fixed;
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
     height: 80px;
     z-index: 1000;
     background-color: #262a33;
@@ -332,17 +345,16 @@ li {
     position: absolute !important; /*!!!!!!!!!!*/
     right: 50%;
     left: 50%;
+    margin-left: -35px;
+    margin-top: 10px;
   }
   .brandICON img {
-    height: 80px;
+    height: 70px;
+    width: 70px;
   }
-
   .bottomMenu1 {
     bottom: 0;
     position: fixed;
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
     height: 80px;
     z-index: 1000;
     background-color: #262a33;
@@ -350,7 +362,6 @@ li {
   .bottomMenu1 .far {
     color: #c8d6e5;
     padding-top: 20px;
-    margin-left: 15px;
     font-size: 25px;
   }
   #footerContainer {
@@ -512,7 +523,9 @@ li {
     right: 0;
     position: absolute;
   }
-
+  .ServicesSection {
+    outline: none;
+  }
   .centermenu li .ServicesSection:hover {
     border-bottom: none;
   }
@@ -647,4 +660,7 @@ li {
 }
 #ProductCategoriest {
   min-width: max-content;
+}
+.bottomnav {
+  justify-content: center;
 }

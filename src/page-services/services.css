@@ -51,21 +51,19 @@
   margin-top: 80px;
   outline: none;
 }
-
 .cont1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .cont1 .btn {
-  width: 200px;
   border: 3px solid #818078;
   border-radius: 20px;
   color: #818078;
   height: 40px;
   text-align: left;
-  padding-left: 15px;
 }
 .toggleIcon {
   float: right;
@@ -74,7 +72,6 @@
 .show .dropdown-menu {
   text-align: center;
   margin: auto;
-  width: 200px;
 }
 .rowfilter2 {
   margin-top: 30px;
@@ -82,7 +79,7 @@
 .filters {
   background-color: white;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .cont1 p {
   font-family: "Lato", sans-serif;
@@ -94,11 +91,10 @@
   padding-right: 30px;
 }
 .color {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 .color ul li {
   display: inline-flex;
-  width: 20px;
 }
 .color ul li a input {
   width: 15px;
@@ -109,9 +105,6 @@
 }
 #sortby {
   min-width: max-content;
-}
-.colorbuttons li {
-  margin-right: 1px;
 }
 .btn-1 {
   background-color: white;
@@ -206,6 +199,9 @@
 .FeaturedProductsHr .hrColumns {
   margin: auto;
 }
+.FeaturedProductsHr .col-1 {
+  margin: auto;
+}
 .FeaturedProductsHr button {
   width: 30px;
   background-color: #2d343a;
@@ -218,12 +214,12 @@
 }
 .carousel-control-prev {
   left: 40%;
-  top: -15%;
+  top: 5%;
   position: absolute;
 }
 .carousel-control-next {
   right: 40%;
-  top: -15%;
+  top: 5%;
   position: absolute;
 }
 /*hr */
@@ -242,11 +238,18 @@
     font-size: 55px;
     font-weight: 1000;
   }
+  .cont1 .btn {
+    width: 200px;
+  }
+  .colorbuttons li {
+    margin-right: 1px;
+    width: 20px;
+  }
 }
 @media only screen and (max-width: 769px) {
   .servicesLandingImgBox {
     margin: auto;
-    margin-top: 15px;
+    margin-top: 12px;
   }
   /* services hr*/
   .menuServices {
@@ -257,6 +260,13 @@
   }
   .hrContainer .menuServices {
     margin: auto;
+  }
+  .cont1 .btn {
+    width: 160px;
+  }
+  .colorbuttons li {
+    margin-right: 0;
+    width: 15px;
   }
   /* services hr*/
 }
@@ -287,3 +297,6 @@ a {
   margin-top: 0;
 }
 /*breadcrumb*/
+.colorbuttons {
+  min-width: 170px;
+}
