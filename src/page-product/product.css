@@ -56,12 +56,24 @@ body {
   outline: none;
   height: 50px;
 }
-.btn-product {
+#colorButton {
   height: 20px;
   width: 20px;
-  background-color: #999999;
+  background-color: #808e9b;
   border-radius: 10px;
   outline: none;
+  float: left;
+  margin-left: 3px;
+}
+.dropdown-menu {
+  text-align: center;
+  cursor: pointer;
+}
+.show .dropdown-item:hover {
+  background-color: #f1edea;
+  color: #85bc23;
+  font-weight: 700;
+  font-size: 13pt;
 }
 .productDropDown {
   border: 3px solid #f1edea;
@@ -72,6 +84,7 @@ body {
   font-size: 11pt;
   font-weight: 600;
   padding: 5px;
+  height: 40px;
   width: 150px;
   outline: none;
 }
@@ -171,8 +184,7 @@ body {
     margin-bottom: 20px;
   }
   #presentedImage {
-    width: 245px !important;
-    height: 245px;
+    display: none;
   }
   .presentedImage {
     text-align: center;
@@ -193,22 +205,8 @@ body {
   .hr-text {
     font-size: 15pt !important;
   }
-  .smallscreenImageButtons {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center !important;
-    margin: auto !important;
-  }
-  .smallscreenImageButtons button {
-    width: 15px;
-    height: 15px;
-    margin: 10px;
-    border-radius: 20px;
-    border: 2px solid #999999;
-  }
   .smallscreenImageButtonsDiv {
-    text-align: center;
+    margin-top: 30px;
   }
   #archi {
     display: none;
@@ -221,6 +219,9 @@ body {
     font-weight: 800;
   }
   #zoomPhoto {
+    display: none;
+  }
+  #printIcon {
     display: none;
   }
 }
@@ -282,11 +283,14 @@ body {
 /* <!--Benefits Content--->  */
 .benefit {
   background-color: #45413e;
+  text-align: center;
+}
+.benefits {
+  text-align: left;
 }
 .benefit h5 {
   color: white;
 }
-
 .benefit p {
   color: #999999;
 }
@@ -355,7 +359,7 @@ body {
   background-color: #262a33;
 }
 .ProductScreen {
-  height: 700px !important;
+  height: 660px !important;
   background-color: #f1edea;
 }
 .ProductScreen hr {
@@ -386,7 +390,7 @@ body {
   width: 250px;
   border-radius: 10px;
   margin: auto;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 15px;
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -472,12 +476,19 @@ body {
   }
   #printProduct * {
     visibility: visible;
-    width: fit-content;
+    width: max-content;
   }
   .ProductDetailPageMain {
     top: 0;
     left: 0;
     position: absolute;
+  }
+  .imagesList {
+    display: inline-flex;
+    margin-top: 30px;
+  }
+  .imagesList li {
+    margin-right: 40px;
   }
   #printIcon {
     display: none;

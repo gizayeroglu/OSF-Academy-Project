@@ -85,7 +85,7 @@
 
     <!--small-device footer-->
 
-    <div class="small-footer d-md-none">
+    <div class="small-footer d-lg-none">
         <div class="Copyright">
             &copy; Copyright <span id="smallDeviceYear"></span>
             <p>All Rights Reserved.</p>
@@ -127,7 +127,7 @@
                     <li><a href="error.html">Contact</a></li>
               </ul>
         </div>
-        <div class=" footerLine">
+        <div class="footerLine">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -151,8 +151,8 @@
     let currentYear = document.getElementById("year").innerHTML;
     let smallDeviceYear = document.getElementById("smallDeviceYear").innerHTML;
     currentYear = year.getFullYear();
-    document.getElementById("year").innerHTML = currentYear;
-    document.getElementById("smallDeviceYear").innerHTML = currentYear;
+    document.getElementById("year").innerHTML = currentYear + ".";
+    document.getElementById("smallDeviceYear").innerHTML = currentYear + ".";
 
     /* small screen footer about dropdown */
     const dropmenuAbout=document.getElementById("dropMenuAbout");

@@ -137,15 +137,6 @@ a {
 
 /* summer sales section*/
 
-@media only screen and (min-width: 1280px) {
-  /*large*/
-}
-
-@media only screen and (min-width: 768px) {
-}
-@media only screen and (max-width: 767px) {
-}
-
 /* full width banner osf theme*/
 .fullwidthImage img {
   margin-left: 0;
@@ -157,6 +148,10 @@ a {
 /* <!--Benefits Content--->  */
 .benefit {
   background-color: #45413e;
+  text-align: center;
+}
+.benefits {
+  text-align: left;
 }
 .benefit h5 {
   color: white;

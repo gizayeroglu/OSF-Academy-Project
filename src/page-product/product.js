@@ -102,22 +102,6 @@ buyNow.addEventListener("click", function () {
   document.getElementById("badgeSmallShoppingBag").innerHTML = total;
 });
 
-let imageButton1 = document.getElementById("imageButton1");
-let imageButton2 = document.getElementById("imageButton2");
-let imageButton3 = document.getElementById("imageButton3");
-let imageButton4 = document.getElementById("imageButton4");
-imageButton1.addEventListener("click", function () {
-  image.src = require("../images/product1.jpg");
-});
-imageButton2.addEventListener("click", function () {
-  image.src = require("../images/product2.jpg");
-});
-imageButton3.addEventListener("click", function () {
-  image.src = require("../images/product3.jpg");
-});
-imageButton4.addEventListener("click", function () {
-  image.src = require("../images/product4.jpg");
-});
 /*Image zoom */
 const zoom = document.getElementById("zoomPhoto");
 zoom.addEventListener("click", function () {
@@ -129,4 +113,19 @@ zoom.addEventListener("click", function () {
 const print = document.getElementById("printIcon");
 print.addEventListener("click", function () {
   window.print();
+});
+
+document.querySelectorAll(".dropitem").forEach((item) => {
+  item.addEventListener("click", function () {
+    document.getElementById("gray").innerHTML = item.innerHTML;
+    let colorName = item.innerHTML;
+    let colorButton = document.getElementById("colorButton");
+    if (colorName == "Blue") {
+      colorButton.style.backgroundColor = "#4bcffa";
+    } else if (colorName == "Black") {
+      colorButton.style.backgroundColor = "#1e272e";
+    } else {
+      colorButton.style.backgroundColor = "#808e9b";
+    }
+  });
 });

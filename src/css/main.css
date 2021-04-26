@@ -109,6 +109,10 @@ li {
 .contact {
   margin-right: 2%;
 }
+#navContent {
+  background-color: white;
+  width: 100%;
+}
 
 /*footer*/
 @media only screen and (min-width: 1400px) {
@@ -119,6 +123,10 @@ li {
 @media only screen and (min-width: 992px) {
   .ImageBoxDrop {
     display: block !important;
+  }
+  .bigfooter {
+    display: block !important;
+    margin-bottom: 80px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -132,6 +140,9 @@ li {
   }
   .navbar {
     width: 100%;
+  }
+  .bigfooter {
+    margin-bottom: 0;
   }
 
   .centermenu .nav-item {
@@ -255,7 +266,9 @@ li {
     border-radius: 5px;
     padding: 20px;
   }
-
+  .bigfooter {
+    display: none;
+  }
   /*login popup*/
 
   .iconsmenu li {
@@ -364,6 +377,9 @@ li {
     padding-top: 20px;
     font-size: 25px;
   }
+  .badge {
+    width: max-content;
+  }
   #footerContainer {
     display: none; /*should be displayed as a dropdown*/
   }
@@ -395,8 +411,8 @@ li {
 .dropdown-item {
   padding: 6px 0;
 }
-
 .MAIN {
+  background-color: white;
   top: 0;
   position: static; /* asagı akmıyor*/
   margin-left: 0;
@@ -405,7 +421,6 @@ li {
   height: 100px;
   align-items: center;
 }
-
 .centermenu li .ServicesSection:hover {
   background-color: #262a33;
   color: #c8d6e5 !important;
@@ -499,6 +514,7 @@ li {
 }
 .small-footer {
   margin-bottom: 12%;
+  background-color: white;
 }
 .small-footer .footerLine {
   text-align: center;
@@ -541,20 +557,17 @@ li {
   font-size: 10pt;
   color: #85bc23;
 }
-
 .far {
   font-size: 28px;
   font-weight: 300;
   position: relative;
   color: #999999;
 }
-
 .badgeContainer .badge {
   bottom: 15px;
   left: 17px;
   position: absolute;
 }
-
 /*breadcrumbs*/
 .breadcrumbsList {
   display: none;
@@ -613,7 +626,7 @@ li {
 .Copyright {
   font-family: "Lato", sans-serif;
   font-size: 11pt;
-  margin-top: 15px;
+  padding-top: 15px;
   font-weight: 500;
 }
 .small-footer {

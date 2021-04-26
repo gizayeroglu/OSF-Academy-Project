@@ -57,23 +57,42 @@
                     <div class="col-xl-6 presentedImage">
                         <a id="zoomPhoto" data-target="#modal1" data-toggle="modal"><i class="fal fa-expand-arrows"></i></a><img src="<%= require('../images/product1.jpg') %>" alt="Product" id="presentedImage">
                     </div>
-                    <div class="col-xl-2">
-                        <ul class="imagesList">
-                            <li><a><img src="<%= require('../images/product1-small.jpg') %>" id="image1"></a></li>
-                            <li><a><img src="<%= require('../images/product2-small.jpg') %>" id="image2"></a></li>
-                            <li><a> <img src="<%= require('../images/product3-small.jpg') %>" id="image3"></a></li>
-                            <li><a><img src="<%= require('../images/product4-small.jpg') %>" id="image4"></a></li>
-                        </ul>
-                        <div class="smallscreenImageButtonsDiv">
-                            <ul class="smallscreenImageButtons d-md-none">
-                                <!---display md none-->
-                                <li><button class="slideButton" id="imageButton1"></button></li>
-                                <li><button class="slideButton" id="imageButton2"></button></li>
-                                <li><button class="slideButton" id="imageButton3"></button></li>
-                                <li><button class="slideButton" id="imageButton4"></button></li>
-                            </ul>
+                        <div class="col-12 smallDeviceProductSlide d-md-none">
+                            <div id="carouselProductIndicators" class="carousel slide" data-ride="carousel">
+                        
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="<%= require('../images/product1.jpg') %>"  alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="<%= require('../images/product2.jpg') %>" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="<%= require('../images/product3.jpg') %>" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="<%= require('../images/product4.jpg') %>" alt="Fourt slide">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                                <div class="col-xl-2 col-12">
+                                    <ul class="imagesList">
+                                        <li><a><img src="<%= require('../images/product1-small.jpg') %>" id="image1" data-target="#carouselProductIndicators" data-slide-to="0"></a></li>
+                                        <li><a><img src="<%= require('../images/product2-small.jpg') %>" id="image2" data-target="#carouselProductIndicators" data-slide-to="1"></a></li>
+                                        <li><a> <img src="<%= require('../images/product3-small.jpg') %>" id="image3" data-target="#carouselProductIndicators" data-slide-to="2"></a></li>
+                                        <li><a><img src="<%= require('../images/product4-small.jpg') %>" id="image4" data-target="#carouselProductIndicators" data-slide-to="3"></a></li>
+                                    </ul>
+                                </div>
+                        <div class="col-12 d-md-none smallscreenImageButtonsDiv">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselProductIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselProductIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselProductIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselProductIndicators" data-slide-to="3"></li>
+                            </ol>
+                        </div>
+                  
                     <div class="col-xl-4">
                         <div class="conitainer">
                             <div class="row priceProduct">
@@ -88,11 +107,12 @@
                                         <a class="btn  dropdown-toggle productDropDown" href="#" role="button"
                                             id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
-                                            <input type=button class="btn-product"> Dark Gray
+                                            <input type=button class="btn-product" id="colorButton"><span id="gray">Dark Gray</span>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Black</a>
-                                            <a class="dropdown-item" href="#">Blue</a>
+                                            <a class="dropdown-item dropitem">Dark Gray</a>
+                                            <a class="dropdown-item dropitem">Black</a>
+                                            <a class="dropdown-item dropitem">Blue</a>
                                         </div>
                                     </div>
                                 </div>

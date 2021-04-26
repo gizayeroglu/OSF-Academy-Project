@@ -14,3 +14,29 @@ hideFilter.addEventListener("click", function () {
     filtersrow.style.display = "";
   }
 });
+
+document.querySelectorAll(".dropitem").forEach((item) => {
+  item.addEventListener("click", function () {
+    document.getElementById("price").innerHTML = item.innerHTML;
+  });
+});
+document.querySelectorAll(".dropitem2").forEach((item) => {
+  item.addEventListener("click", function () {
+    document.getElementById("brand").innerHTML = item.innerHTML;
+  });
+});
+document.querySelectorAll(".dropitem3").forEach((item) => {
+  item.addEventListener("click", function () {
+    document.getElementById("size").innerHTML = item.innerHTML;
+  });
+});
+document.querySelectorAll(".dropitem4").forEach((item) => {
+  item.addEventListener("click", function () {
+    document.getElementById("list").innerHTML = item.innerHTML;
+  });
+});
+document.querySelectorAll(".dropitem5").forEach((item) => {
+  item.addEventListener("click", function () {
+    document.getElementById("perpage").innerHTML = item.innerHTML;
+  });
+});

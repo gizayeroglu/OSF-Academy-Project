@@ -41,6 +41,11 @@
   font-weight: 600;
   font-size: 11pt;
 }
+.dropdown-menu a:active {
+  background-color: white;
+  color: black;
+  font-family: "Lato", sans-serif;
+}
 .servicesloadMore-btn {
   border-radius: 40px;
   width: 200px;
@@ -71,7 +76,15 @@
 }
 .show .dropdown-menu {
   text-align: center;
-  margin: auto;
+}
+.show .dropdown-item {
+  cursor: pointer;
+}
+.show .dropdown-item:hover {
+  background-color: #f1edea;
+  color: #85bc23;
+  font-weight: 700;
+  font-size: 13pt;
 }
 .rowfilter2 {
   margin-top: 30px;
@@ -132,6 +145,7 @@
 }
 .btn-8 {
   background-color: #f1edea;
+  border: 2px solid gray !important;
 }
 /* Services*/
 
@@ -241,6 +255,9 @@
   .cont1 .btn {
     width: 200px;
   }
+  .cont1 .dropdown-menu {
+    width: 200px;
+  }
   .colorbuttons li {
     margin-right: 1px;
     width: 20px;
@@ -264,13 +281,15 @@
   .cont1 .btn {
     width: 160px;
   }
+  .cont1 .dropdown-menu {
+    width: 160px;
+  }
   .colorbuttons li {
     margin-right: 0;
     width: 15px;
   }
   /* services hr*/
 }
-
 .containerpop {
   text-align: center;
   color: white;
