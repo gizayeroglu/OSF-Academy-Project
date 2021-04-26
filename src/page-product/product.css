@@ -65,11 +65,11 @@ body {
   float: left;
   margin-left: 3px;
 }
-.dropdown-menu {
+.showdrop .dropdown-menu {
   text-align: center;
   cursor: pointer;
 }
-.show .dropdown-item:hover {
+.showdrop .dropdown-item:hover {
   background-color: #f1edea;
   color: #85bc23;
   font-weight: 700;

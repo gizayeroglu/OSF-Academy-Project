@@ -41,7 +41,7 @@
   font-weight: 600;
   font-size: 11pt;
 }
-.dropdown-menu a:active {
+.show .dropdown-menu a:active {
   background-color: white;
   color: black;
   font-family: "Lato", sans-serif;
@@ -74,13 +74,13 @@
   float: right;
   margin-right: 5px;
 }
-.show .dropdown-menu {
+.showdrop .dropdown-menu {
   text-align: center;
 }
-.show .dropdown-item {
+.showdrop .dropdown-item {
   cursor: pointer;
 }
-.show .dropdown-item:hover {
+.showdrop .dropdown-item:hover {
   background-color: #f1edea;
   color: #85bc23;
   font-weight: 700;
