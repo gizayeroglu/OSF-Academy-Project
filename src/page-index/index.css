@@ -7,6 +7,10 @@ a {
   background-color: #f3f0e6;
   margin-top: 0;
 }
+.slider-ss55 {
+  justify-content: center;
+  margin: auto;
+}
 /* carousel*/
 .carousel-indicators li {
   border-radius: 50%;
@@ -584,6 +588,12 @@ a {
 .PopItemsPrice {
   font-size: 14px;
   color: #3b5b96;
+  width: fit-content;
+  bottom: 15px;
+  position: absolute;
+  margin-left: 100px !important;
+  margin: auto;
+  text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: 600;
 }

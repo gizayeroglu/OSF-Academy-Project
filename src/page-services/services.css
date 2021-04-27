@@ -40,6 +40,14 @@
   color: lightgray;
   font-weight: 600;
   font-size: 11pt;
+  width: fit-content;
+  bottom: 25px;
+  position: absolute;
+  margin-left: 100px !important;
+  margin: auto;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
 }
 .servicesloadMore-btn {
   border-radius: 40px;
@@ -284,6 +292,9 @@
     width: 15px;
   }
   /* services hr*/
+  .servicesLandingImgBox {
+    margin-top: 30px;
+  }
 }
 .containerpop {
   text-align: center;
