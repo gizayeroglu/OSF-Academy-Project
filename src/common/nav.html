@@ -333,4 +333,13 @@
          }
      })
 
+     let shoppingBag = localStorage.getItem("shoppingBag");
+     let favs= localStorage.getItem("favourite");
+     window.onload= function(){
+         document.getElementById("badgeSmallShoppingBag").innerHTML = shoppingBag;
+         document.getElementById("badgeShoppingBag").innerHTML = shoppingBag;
+         document.getElementById("badgeHeart").innerHTML = favs;
+         document.getElementById("badgeSmallHeart").innerHTML =favs;
+     }
+
 </script>

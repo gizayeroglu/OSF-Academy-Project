@@ -71,21 +71,29 @@ setTimeout(function () {
 
 /*Add to fav*/
 function onAddToFav() {
-  let favsmall = document.getElementById("badgeSmallHeart").innerHTML;
-  let fav = document.getElementById("badgeHeart").innerHTML;
-  fav++;
-  favsmall++;
-  document.getElementById("badgeHeart").innerHTML = fav;
-  document.getElementById("badgeSmallHeart").innerHTML = favsmall;
+  if (typeof Storage !== "undefined") {
+    if (localStorage.favourite) {
+      localStorage.favourite = Number(localStorage.favourite) + 1;
+    } else {
+      localStorage.favourite = 1;
+    }
+    document.getElementById("badgeHeart").innerHTML = localStorage.favourite;
+    document.getElementById("badgeSmallHeart").innerHTML =
+      localStorage.favourite;
+  }
 }
-
 function onAddToChart() {
-  let shopsmall = document.getElementById("badgeSmallShoppingBag").innerHTML;
-  let shop = document.getElementById("badgeShoppingBag").innerHTML;
-  shop++;
-  shopsmall++;
-  document.getElementById("badgeSmallShoppingBag").innerHTML = shopsmall;
-  document.getElementById("badgeShoppingBag").innerHTML = shop;
+  if (typeof Storage !== "undefined") {
+    if (localStorage.shoppingBag) {
+      localStorage.shoppingBag = Number(localStorage.shoppingBag) + 1;
+    } else {
+      localStorage.shoppingBag = 1;
+    }
+    document.getElementById("badgeSmallShoppingBag").innerHTML =
+      localStorage.shoppingBag;
+    document.getElementById("badgeShoppingBag").innerHTML =
+      localStorage.shoppingBag;
+  }
 }
 /*Add to fav*/
 document.querySelectorAll(".addToFav").forEach((item) => {

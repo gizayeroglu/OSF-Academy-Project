@@ -14,12 +14,9 @@ a {
   padding: 3px;
   color: gray;
 }
-.slider {
-  margin: 0 !important;
-}
 .slider img {
-  border-radius: 15px;
-  height: 560px;
+  border-radius: 8px;
+  height: 640px;
   width: auto;
 }
 .carouselbutton {
@@ -32,59 +29,99 @@ a {
   margin-top: 3%;
   outline: none;
 }
-
-.carousel-caption {
+.carousel-caption h5 {
+  font-size: 50px;
+  font-weight: 700;
+  width: 100%;
+}
+.caption1 {
+  top: 10%;
+  left: 10%;
+  bottom: auto;
   font-family: "Lato", sans-serif;
 }
-.carousel-caption h5 {
-  font-size: 35px;
-  font-weight: bolder;
+.carousel-caption p {
+  margin-top: 100px;
+  width: 70%;
+  font-size: 13pt;
 }
-.carousel-caption {
-  top: 15%;
+.carousel-caption .carouselbutton {
+  background: transparent;
+  width: 200px;
+  border-radius: 40px;
+  color: white;
+  height: 50px;
+  border: 2px solid white;
+  margin-top: 10%;
+  outline: none;
+}
+.caption2 {
   bottom: auto;
+  top: 10%;
+  font-family: "Lato", sans-serif;
 }
-
+.caption2 h5 {
+  width: 90%;
+  margin: auto;
+}
+.caption2 p {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+}
+.caption3 {
+  top: 10%;
+  right: 10%;
+  bottom: auto;
+  font-family: "Lato", sans-serif;
+}
+.caption3 h5 {
+  margin-left: auto;
+}
+.caption3 p {
+  text-align: right;
+  margin-left: auto;
+}
 /* carousel*/
 
 /* summer sales section*/
 .summersales {
   text-align: center;
-  width: 310px;
   align-items: center;
+  width: 320px;
 }
 .imageContainer {
   position: relative;
+  right: 20px;
 }
 #summerSaleImg {
   position: absolute;
-  left: 10px;
-  height: 365px;
-  width: 300px;
-  border-radius: 10px;
+  left: 20px;
+  height: 420px;
+  border-radius: 8px;
+  width: 320px;
 }
 .ss55 {
   position: absolute;
   text-align: center;
-  left: 45px;
+  left: 40px;
   font-family: "Lato", sans-serif;
   color: white;
 }
 .saleImage {
   position: static;
-  height: 366px;
+  height: 420px;
 }
 .ss55 h5 {
-  font-size: 100px;
+  font-size: 120px;
   font-weight: 900;
   margin-top: 60px;
-  margin-left: 10px;
 }
 #summersalep {
-  font-size: 25px;
-  margin-top: 35px;
+  font-size: 28px;
+  margin-top: 55px;
   width: 50%;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 .followbutton {
   border: 3px solid #3b5b96;
@@ -106,18 +143,18 @@ a {
 }
 .summersales h2 {
   font-family: "Lato", sans-serif;
-  font-size: 14pt;
-  margin-left: 31px;
+  font-size: 16pt;
+  text-align: center;
   justify-items: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .summersales p {
   font-family: "Lato", sans-serif;
-  font-size: 10pt;
+  font-size: 12pt;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 18px;
   width: 80%;
-  margin-left: 40px;
+  margin: auto;
 }
 .followbutton .facebook-btn {
   border: 0;
@@ -331,14 +368,15 @@ a {
   .featured {
     display: none;
   }
-
   .popularitems {
     display: none;
   }
-  .summersales {
+  .DescriptionProduct {
     display: none;
   }
-  .DescriptionProduct {
+}
+@media only screen and (max-width: 1000px) {
+  .summersales {
     display: none;
   }
 }
@@ -351,8 +389,23 @@ a {
   .popitemProduct {
     display: none;
   }
+  .carousel-caption h5 {
+    font-size: 25px;
+    font-weight: 600;
+    width: 90%;
+  }
+  .carousel-caption p {
+    margin-top: 50px;
+    width: 80%;
+    font-size: 11pt;
+  }
+  .carousel-caption .carouselbutton {
+    width: 150px;
+    border-radius: 40px;
+    height: 40px;
+    margin-top: 15%;
+  }
 }
-
 /* small screen popular item slide */
 .sliderPop {
   padding-top: 25px;

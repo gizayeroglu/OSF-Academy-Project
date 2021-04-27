@@ -92,16 +92,17 @@ plus.addEventListener("click", function () {
 /*adding elements to shopping bag */
 const buyNow = document.getElementById("buyNow");
 buyNow.addEventListener("click", function () {
-  let shopsmallIcon = Number(
-    document.getElementById("badgeSmallShoppingBag").innerHTML
-  );
-  let shop = Number(document.getElementById("badgeShoppingBag").innerHTML);
   let number = Number(document.getElementById("quantityBox").value);
-  let total = shop + number;
-  document.getElementById("badgeShoppingBag").innerHTML = total;
-  document.getElementById("badgeSmallShoppingBag").innerHTML = total;
+  if (localStorage.shoppingBag) {
+    localStorage.shoppingBag = Number(localStorage.shoppingBag) + number;
+  } else {
+    localStorage.shoppingBag = number;
+  }
+  document.getElementById("badgeSmallShoppingBag").innerHTML =
+    localStorage.shoppingBag;
+  document.getElementById("badgeShoppingBag").innerHTML =
+    localStorage.shoppingBag;
 });
-
 /*Image zoom */
 const zoom = document.getElementById("zoomPhoto");
 zoom.addEventListener("click", function () {
