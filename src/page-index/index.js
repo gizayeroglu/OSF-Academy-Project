@@ -103,3 +103,40 @@ document.querySelectorAll(".addToFav").forEach((item) => {
 document.querySelectorAll(".addToChart").forEach((item) => {
   item.addEventListener("click", onAddToChart);
 });
+
+/* change slider image*/
+let width = window.innerWidth;
+let carousesecretspan = document.querySelectorAll(".smallcarouselp");
+let crouselImage1 = document.getElementById("firstCarouselImage");
+let crouselImage2 = document.getElementById("secondCarouselImage");
+let crouselImage3 = document.getElementById("thirdCarouselImage");
+if (width < 600) {
+  crouselImage1.src = require("../images/caro1.png");
+  crouselImage2.src = require("../images/caro2.png");
+  crouselImage3.src = require("../images/caro3.png");
+  carousesecretspan.forEach((item) => (item.style.display = "block"));
+} else if (width > 600) {
+  crouselImage1.src = require("../images/carousel1.png");
+  crouselImage2.src = require("../images/carousel2.png");
+  crouselImage3.src = require("../images/carousel3.png");
+}
+/* refreshing window when resize it to change photo without refreshing it manual*/
+var ww = $(window).width();
+var limit = 600;
+function refresh() {
+  ww = $(window).width();
+  var w =
+    ww < limit
+      ? location.reload(true)
+      : ww > limit
+      ? location.reload(true)
+      : (ww = limit);
+}
+var tOut;
+$(window).resize(function () {
+  var resW = $(window).width();
+  clearTimeout(tOut);
+  if ((ww > limit && resW < limit) || (ww < limit && resW > limit)) {
+    tOut = setTimeout(refresh, 100);
+  }
+});

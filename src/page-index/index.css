@@ -18,6 +18,9 @@ a {
   padding: 3px;
   color: gray;
 }
+.smallcarouselp {
+  display: none;
+}
 .slider img {
   border-radius: 8px;
   height: 640px;
@@ -393,13 +396,19 @@ a {
   .popitemProduct {
     display: none;
   }
+  .carousel-caption {
+    top: 2%;
+  }
+  .slider {
+    height: fit-content;
+  }
   .carousel-caption h5 {
     font-size: 25px;
     font-weight: 600;
     width: 90%;
   }
   .carousel-caption p {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 80%;
     font-size: 11pt;
   }
@@ -407,7 +416,11 @@ a {
     width: 150px;
     border-radius: 40px;
     height: 40px;
-    margin-top: 15%;
+    margin-top: 10%;
+  }
+  .cookieContiner {
+    top: 200px;
+    height: fit-content;
   }
 }
 /* small screen popular item slide */

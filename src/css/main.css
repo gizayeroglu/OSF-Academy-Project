@@ -333,6 +333,9 @@ li {
   #US {
     margin-left: 20px;
   }
+  .badge {
+    min-width: 5px;
+  }
 }
 @media only screen and (max-width: 769px) {
   /*small*/
