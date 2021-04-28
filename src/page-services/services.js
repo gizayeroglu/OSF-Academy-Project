@@ -14,7 +14,7 @@ hideFilter.addEventListener("click", function () {
     filtersrow.style.display = "";
   }
 });
-
+/* clicable dropdown buttons*/
 document.querySelectorAll(".dropitem").forEach((item) => {
   item.addEventListener("click", function () {
     document.getElementById("price").innerHTML = item.innerHTML;

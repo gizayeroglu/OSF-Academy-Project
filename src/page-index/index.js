@@ -107,9 +107,9 @@ document.querySelectorAll(".addToChart").forEach((item) => {
 /* change slider image*/
 let width = window.innerWidth;
 let carousesecretspan = document.querySelectorAll(".smallcarouselp");
-let crouselImage1 = document.getElementById("firstCarouselImage");
-let crouselImage2 = document.getElementById("secondCarouselImage");
-let crouselImage3 = document.getElementById("thirdCarouselImage");
+const crouselImage1 = document.getElementById("firstCarouselImage");
+const crouselImage2 = document.getElementById("secondCarouselImage");
+const crouselImage3 = document.getElementById("thirdCarouselImage");
 if (width < 600) {
   crouselImage1.src = require("../images/caro1.png");
   crouselImage2.src = require("../images/caro2.png");
@@ -121,20 +121,20 @@ if (width < 600) {
   crouselImage3.src = require("../images/carousel3.png");
 }
 /* refreshing window when resize it to change photo without refreshing it manual*/
-var ww = $(window).width();
-var limit = 600;
+let ww = $(window).width();
+let limit = 600;
 function refresh() {
   ww = $(window).width();
-  var w =
+  let w =
     ww < limit
       ? location.reload(true)
       : ww > limit
       ? location.reload(true)
       : (ww = limit);
 }
-var tOut;
+let tOut;
 $(window).resize(function () {
-  var resW = $(window).width();
+  let resW = $(window).width();
   clearTimeout(tOut);
   if ((ww > limit && resW < limit) || (ww < limit && resW > limit)) {
     tOut = setTimeout(refresh, 100);
