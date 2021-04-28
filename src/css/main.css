@@ -140,6 +140,7 @@ li {
   }
   .navbar {
     width: 100%;
+    height: 100px;
   }
   .bigfooter {
     margin-bottom: 0;
@@ -265,6 +266,7 @@ li {
     align-self: center;
     position: fixed;
     border-radius: 5px;
+    top: 20%;
     padding: 20px;
   }
   .bigfooter {
@@ -334,7 +336,7 @@ li {
     margin-left: 20px;
   }
   .badge {
-    min-width: 5px;
+    min-width: 10px;
   }
 }
 @media only screen and (max-width: 769px) {
@@ -433,7 +435,7 @@ li {
 /*login popup*/
 #passwordShould {
   font-family: "Lato", sans-serif;
-  color: red;
+  color: #ea2027;
 }
 .signin {
   color: #2d343a;
@@ -529,7 +531,6 @@ li {
 
 @media only screen and (max-width: 769px) {
   .nav-item {
-    background-color: #262a33;
     padding-left: 10px;
   }
   .nav-link {
@@ -540,6 +541,7 @@ li {
     left: 0;
     right: 0;
     position: absolute;
+    background-color: #262a33;
   }
   .ServicesSection {
     outline: none;
@@ -660,7 +662,6 @@ li {
   color: white;
   margin-left: 15px;
 }
-
 /*navbar-mobile*/
 .listedmegamenuItems {
   margin-top: 33px;
@@ -678,4 +679,9 @@ li {
 }
 .bottomnav {
   justify-content: center;
+}
+#smallGirldrop {
+  background-color: #262a33;
+  text-align: center;
+  padding-bottom: 50px;
 }

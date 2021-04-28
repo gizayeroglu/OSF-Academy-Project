@@ -63,6 +63,7 @@ body {
   border-radius: 10px;
   outline: none;
   float: left;
+  border: none;
   margin-left: 3px;
 }
 .showdrop .dropdown-menu {

@@ -14,7 +14,7 @@
                     </div>
                     <div class="collapse navbar-collapse justify-content-center" id="navbar">
 
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="testing">
                             <div class="OSFGLOBAL">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="index.html" id="OSFGLOBAL">
@@ -24,7 +24,7 @@
                                 </li>
                             </div>
                             <div class="centermenu">
-                                <li class="nav-item dropdown menu-area">
+                                <li class="nav-item dropdown menu-area" id="menuArea">
                                     <a class="nav-link dropdown-toggle ServicesSection" href="#" id="mega-one"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="openSmallScreen()">
                                         SERVICES
@@ -123,7 +123,6 @@
                                                         <li><a href="error.html">Flower&Plants</a></li>
                                                         <li><a href="error.html">Foods</a></li>
                                                     </ul>
-                                        
                                         </div>
                                     </li>
                                 </li>
@@ -147,6 +146,9 @@
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         $ US
                                     </a>
+                                </li>
+                                <li class="nav-item d-md-none" id="smallGirldrop">
+                                    <a class="nav-link"><img src="../images/dropdownsmallgirl.jpg"></a>
                                 </li>
                             </div>
                             <div class="rightmenu">
@@ -212,7 +214,7 @@
                     <form>
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" required class="form-control1" id="myEmail">
+                            <input type="email"class="form-control1" id="myEmail" size="30" required> 
                         </div>
                         <div class="form-group">
                             <label>Lato</label>
@@ -241,14 +243,17 @@
 
 <script>
      /* small screen navbar category section dropdown */
+     const navbar=document.getElementById("testing");
     const dropmenuCategory=document.getElementById("dropdownmenuNavCategoriest");
     dropmenuCategory.addEventListener('click',function(){
            let dropProductCategoriest = document.getElementById("dropmenuNavCategoriest");
         if (dropProductCategoriest.style.display == "none" || !dropProductCategoriest.style.display) {
             dropProductCategoriest.style.display = "block";
+            navbar.style.height="4000px";
         }
         else {
             dropProductCategoriest.style.display = "none";
+            navbar.style.height="fit-content";
         }
     })
    /* small screen navbar sale section dropdown */
@@ -257,6 +262,7 @@
        let dropProductSale = document.getElementById("dropmenuNavSale");
        if (dropProductSale.style.display == "none" || !dropProductSale.style.display) {
            dropProductSale.style.display = "block";
+            navbar.style.height = "4000px";
        }
        else {
            dropProductSale.style.display = "none";
@@ -275,7 +281,6 @@
             }else{
                 dropdown.style.display="none";
             }
-  
         }else if(lWidth>769){
          dropdown.style.display=="none";
         }
@@ -307,7 +312,9 @@
          }
          else if (formContentPassword != "") {
              passwordSpan.innerHTML = "Signed in";
+             setTimeout(function () {
              $('#myModal').modal('hide');
+             },1000);
          }
          else {
              alert("Something went wrong!")
@@ -317,19 +324,19 @@
     /* login popup eye functionality */
      const eyefunc=document.getElementById("myFunction");
      eyefunc.addEventListener('click',function(){
-         let x = document.getElementById("myPassword");
-         let y = document.getElementById("openeye");
-         let z = document.getElementById("closeeye");
+         let password = document.getElementById("myPassword");
+         let openEye = document.getElementById("openeye");
+         let closeEye = document.getElementById("closeeye");
 
-         if (x.type === 'password') {
-             x.type = "text";
-             y.style.display = "block";
-             z.style.display = "none";
+         if (password.type === 'password') {
+             password.type = "text";
+             openEye.style.display = "block";
+             closeEye.style.display = "none";
          }
          else {
-             x.type = "password";
-             y.style.display = "none";
-             z.style.display = "block";
+             password.type = "password";
+             openEye.style.display = "none";
+             closeEye.style.display = "block";
          }
      })
 
@@ -343,3 +350,4 @@
      }
 
 </script>
+
