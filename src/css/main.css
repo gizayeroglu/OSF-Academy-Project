@@ -266,6 +266,9 @@ li {
     top: 20%;
     padding: 20px;
   }
+  .navbar-nav {
+    height: 100px;
+  }
   .bigfooter {
     display: none;
   }
