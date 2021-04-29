@@ -40,3 +40,30 @@ document.querySelectorAll(".dropitem5").forEach((item) => {
     document.getElementById("perpage").innerHTML = item.innerHTML;
   });
 });
+
+const button = document.getElementById("loadMoreButton");
+button.addEventListener("click", function () {
+  const loadMore = document.getElementById("loadMoreRow");
+  const myRequest = new XMLHttpRequest();
+  myRequest.open("GET", "PopularItems.json");
+  myRequest.onload = function () {
+    const myData = JSON.parse(myRequest.responseText);
+    let productsHtml = "";
+
+    for (const product of myData) {
+      productsHtml =
+        productsHtml +
+        `<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="servicesLandingImgBox">
+            <a href="product.html">
+              <img src="${product.ImgSource}">
+                <p class="ProductName">${product.ProductName}</p>
+                <p class="money">${product.Price}</p>
+            </a>
+          </div>
+        </div>`;
+    }
+    loadMore.innerHTML = productsHtml;
+  };
+  myRequest.send();
+});

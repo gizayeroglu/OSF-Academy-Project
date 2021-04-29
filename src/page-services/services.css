@@ -33,7 +33,7 @@
   color: #262a33;
   font-family: "Lato", sans-serif;
   padding: 10px;
-  font-size: 11pt;
+  font-size: 12pt;
   font-weight: 500;
 }
 .servicesLandingImgBox .money {
@@ -41,7 +41,7 @@
   font-weight: 600;
   font-size: 11pt;
   width: fit-content;
-  bottom: 25px;
+  bottom: 35px;
   position: absolute;
   margin-left: 100px !important;
   margin: auto;
@@ -324,4 +324,21 @@ a {
 /*breadcrumb*/
 .colorbuttons {
   min-width: 170px;
+}
+#loadMoreRow {
+  margin: auto;
+  justify-content: center;
+}
+.rowServices {
+  margin: auto;
+  justify-content: center;
+}
+.ServicesPageItems {
+  margin: auto;
+  justify-content: center;
+}
+.servicesLandingImgBox {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
