@@ -240,9 +240,6 @@ li {
   .rightmenu {
     visibility: hidden;
   }
-  .navbar-nav {
-    height: 100px;
-  }
   .centermenu .nav-item {
     margin: auto;
     height: 100px;
