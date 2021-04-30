@@ -12,6 +12,14 @@ li {
 .area {
   background-color: white;
 }
+#dropdownmenuNavSale {
+  font-size: 12pt;
+  font-weight: 600;
+}
+#dropdownmenuNavCategoriest {
+  font-size: 12pt;
+  font-weight: 600;
+}
 #navContent {
   width: 100%;
   left: 0;
